@@ -12,10 +12,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: sbase_development
+  database:
   pool: 5
   username: root
-  password:
+  password: nasa2009
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -31,12 +31,12 @@ test:
   password:
   host: localhost
 
-production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: false
-  database: sbase_production
-  pool: 5
-  username: root
-  password:
-  host: localhost
+#production:
+#  adapter: mysql2
+#  encoding: utf8
+#  reconnect: false
+#  database: sbase_production
+#  pool: 5
+#  username: root
+#  password:
+#  host: localhost
