@@ -1,8 +1,16 @@
 Sbase::Application.routes.draw do
-  get "static_pages/home"
 
-  get "static_pages/help"
+  #Home	      /	       root_path
+  #About	   /about	   about_path
+  #Help	     /help	   help_path
+  #Contact	/contact	 contact_path
+  #Sign up	/signup	   signup_path
+  #Sign in	/signin	   signin_path
 
+  root to: 'static_pages#home'
+  match '/help',    to: 'static_pages#help'
+  #match '/about',   to: 'static_pages#about'
+  #match '/contact', to: 'static_pages#contact'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
