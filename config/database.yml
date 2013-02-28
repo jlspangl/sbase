@@ -28,7 +28,7 @@ test:
   database: sbase_test
   pool: 5
   username: root
-  password:
+  password: nasa2009
   host: localhost
 
 #production:
