@@ -1,10 +1,11 @@
 Sbase::Application.routes.draw do
 
+  get "users/new"
+
   #Home	      /	       root_path
   #About	   /about	   about_path
   #Help	     /help	   help_path
   #Contact	/contact	 contact_path
-  #Sign up	/signup	   signup_path
   #Sign in	/signin	   signin_path
 
   root to: 'static_pages#home'
