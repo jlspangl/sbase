@@ -1,12 +1,38 @@
 Sbase::Application.routes.draw do
 
-  get "users/new"
+  resources :sensors  do
+    collection {post :import}
+  end
 
-  #Home	      /	       root_path
-  #About	   /about	   about_path
-  #Help	     /help	   help_path
-  #Contact	/contact	 contact_path
-  #Sign in	/signin	   signin_path
+  resources :sensor_imports, only: [:new, :create]
+
+  #GET	    /users	    index	   users_path	          page to list all users
+  #GET	    /users/1	  show	   user_path(user)	    page to show user
+  #GET	    /users/new	new	     new_user_path	      page to make a new user
+  #POST	    /users	    create	 users_path	          create a new user
+  #GET	    /users/1/   edit	   edit_user_path(user)	page to edit user with id 1
+  #PUT	    /users/1	  update	 user_path(user)	    update user
+  #DELETE	  /users/1	  destroy	 user_path(user)	    delete user
+
+  resources :users
+
+  # NEW      /sessions/new   new         return an HTML form for creating a new session
+  # POST	   /sessions	     create	     create a new session
+  # DELETE	 /sessions/1	   destroy	   delete session with id 1
+
+  resources :sessions, only: [:new, :create, :destroy]
+
+  #Home	      /	         root_path
+  #About	    /about	   about_path
+  #Help	      /help	     help_path
+  #Contact	 /contact	   contact_path
+  #Sign in	 /signin	   signin_path
+
+
+
+  match '/signup',  to: 'users#new'
+  match '/signin',  to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
 
   root to: 'static_pages#home'
   match '/help',    to: 'static_pages#help'

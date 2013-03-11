@@ -1,35 +1,51 @@
+# == Schema Information
+#
+# Table name: users
+#
+#  id              :integer          not null, primary key
+#  email           :string(255)
+#  created_at      :datetime         not null
+#  updated_at      :datetime         not null
+#  password_digest :string(255)
+#  remember_token  :string(255)
+#  admin           :boolean          default(FALSE)
+#
+
 require 'spec_helper'
 
 describe User do
 
-  before { @user = User.new(name: "Example User", email: "user@example.com",
+  before { @user = User.new(email: "user@example.com",
                             password: "foobar", password_confirmation: "foobar") }
 
   subject { @user }
 
-  it { should respond_to(:name) }
   it { should respond_to(:email) }
   it { should respond_to(:password_digest) }
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
+  it { should respond_to(:remember_token) }
+  it { should respond_to(:admin) }
   it { should respond_to(:authenticate) }
 
 
   it { should be_valid }
+  it { should_not be_admin }
 
-  describe "when name is not present" do
-    before { @user.name = " " }
-    it { should_not be_valid }
+
+  #  Tests for an admin attribute
+  describe "with admin attribute set to 'true'" do
+    before do
+      @user.save!
+      @user.toggle!(:admin)        # flip the admin attribute from false to true.
+    end
+
+    it { should be_admin}           #implies (via the RSpec boolean convention) that
+                                    # the user should have an admin? boolean method.
   end
-
 
   describe "when email is not present" do
     before { @user.email = " " }
-    it { should_not be_valid }
-  end
-
-  describe "when name is too long" do
-    before { @user.name = "a" * 51 }
     it { should_not be_valid }
   end
 
@@ -100,4 +116,16 @@ describe User do
       specify { user_for_invalid_password.should be_false }
     end
   end    #return value of authenticate method"
+
+
+
+  #   To test the remember token, we first save the test user and then check that
+  #   the user’s remember_token attribute isn’t blank.
+
+  describe "remember token" do
+    before { @user.save }
+    #its method is like it but applies the subsequent test to
+    # the given attribute rather than the subject of the test
+    its(:remember_token) { should_not be_blank }
+  end
 end

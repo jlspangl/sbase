@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="span6 offset3">
+    <%= simple_form_for(@sensor, :html => {:class => 'form-horizontal'}) do |f| %>
+        <%= display_base_errors @sensor %>
+        <%= f.input :name, :label => 'Sensor name', :placeholder => "Sensor name" %>
+        <%= f.input :category, :collection => Sensor::CATEGORIES, :label => 'Sensor category', :placeholder => "Sensor type" %>
+        <%= f.input :ecn, :label => 'ECN', :placeholder =>'Equipment Control Number (ECN)'%>
+        <%= f.input :mcn, :label => 'MCN', :placeholder =>'Metrology Control Number (MCN)' %>
+        <%= f.input :model, :label => 'Model', :placeholder =>'Model' %>
+        <%= f.input :serial_no, :label => 'Serial Number', :placeholder => 'Serial Number' %>
+        <%= f.button :submit, :label => submit_label, :class => "btn btn-primary" %>
+        <%= link_to "Cancel", sensors_path, class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

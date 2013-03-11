@@ -82,20 +82,30 @@ p {
 }
 
 /* footer */
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid $grayMediumLight;
   color: $grayLight;
-  font-size:85%;
   a {
     color: $gray;
     &:hover {
       color: $grayDarker;
     }
   }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
 }
-
 
 .debug_dump {
   clear: both;
@@ -165,12 +175,18 @@ aside {
 }
 /* forms */
 
-input, textarea, select, .uneditable-input {
+input, textarea, .uneditable-input {
   border: 1px solid #bbb;
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
   @include box_sizing;
+}
+
+input, select {
+  border: 1px solid #bbb;
+  width: 100%;
+ @include box_sizing;
 }
 
 input {
@@ -236,3 +252,20 @@ aside {
     margin-bottom: 5px;
   }
 }
+
+
+/* footer */
+.footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $grayMediumLight;
+  color: $grayLight;
+  font-size:75%;
+  a {
+    color: $gray;
+    &:hover {
+      color: $grayDarker;
+    }
+  }
+}
+

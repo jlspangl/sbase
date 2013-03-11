@@ -1,0 +1,47 @@
+<h1>Sensor Import</h1>
+
+<p>A CSV or Excel (.xls or .xlsx) file can be used to import records. The first row should be the column names. The following columns are allowed.</p>
+
+<div class="row">
+  <aside class="span3">
+<ul>
+  <% Sensor.columns.each do |column| %>
+      <% if column.name.in? ["id", *Sensor.accessible_attributes] %>
+          <li>
+            <strong><%= column.name %></strong> -
+            <%= column.type.to_s.titleize %> type
+          </li>
+      <% end %>
+  <% end %>
+</ul>
+  </aside>
+
+  <div class="span8">
+<p>
+  <%= image_tag "sensor_import_example.PNG" %>
+</p>
+  </div>
+</div>
+
+<p>If an <strong>id</strong> is supplied it will update the matching record instead of creating a new one.</p>
+
+<%= form_for @sensor_import do |f| %>
+    <% if @sensor_import.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@sensor_import.errors.count, "error") %> prohibited this import from completing:</h2>
+          <ul>
+            <% @sensor_import.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.file_field :file %>
+    </div>
+    <div class="buttons">
+    <%= f.submit "Import Sensors", class: "btn btn-primary" %>
+    <%= link_to "Cancel", sensors_path, class: "btn btn-primary" %>
+    </div>
+<% end %>

@@ -6,6 +6,9 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'faker', '1.0.1'         #  allow us to make sample entries in database
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
+gem 'roo'
+gem 'simple_form'
+
 
 group :development, :test do
   gem 'mysql2'

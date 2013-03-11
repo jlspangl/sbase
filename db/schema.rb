@@ -11,16 +11,33 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130228231109) do
+ActiveRecord::Schema.define(:version => 20130311144718) do
+
+  create_table "sensors", :force => true do |t|
+    t.string   "name"
+    t.string   "category"
+    t.string   "ecn"
+    t.string   "mcn"
+    t.string   "model"
+    t.integer  "serial_no"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "sensors", ["ecn"], :name => "index_sensors_on_ecn"
+  add_index "sensors", ["mcn"], :name => "index_sensors_on_mcn"
+  add_index "sensors", ["serial_no"], :name => "index_sensors_on_serial_no"
 
   create_table "users", :force => true do |t|
-    t.string   "name"
     t.string   "email"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
     t.string   "password_digest"
+    t.string   "remember_token"
+    t.boolean  "admin",           :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
 
 end
