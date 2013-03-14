@@ -15,7 +15,10 @@ class SensorImport
   end
 
   def save
-    if imported_sensors.map(&:valid?).all?
+    if !is_spreadsheet
+      errors.add :base, "File cannot be read. Please choose a spreadsheet file ending in .xls, .xlsx or .csv."
+      false
+    elsif imported_sensors.map(&:valid?).all?
       imported_sensors.each(&:save!)
       true
     else
@@ -50,5 +53,9 @@ class SensorImport
       when ".xlsx" then Roo::Excelx.new(file.path, nil, :ignore)
       else raise "Unknown file type: #{file.original_filename}"
     end
+  end
+
+  def is_spreadsheet
+    %w(.csv .xls .xlsx).include?File.extname(file.original_filename)
   end
 end

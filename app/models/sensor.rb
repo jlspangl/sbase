@@ -2,15 +2,15 @@
 #
 # Table name: sensors
 #
-#  id          :integer          not null, primary key
-#  name        :string(255)
-#  category    :string(255)
-#  ecn         :string(255)
-#  mcn         :string(255)
-#  model       :string(255)
-#  serial_no   :integer
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
+#  id         :integer          not null, primary key
+#  name       :string(255)
+#  category   :string(255)
+#  ecn        :string(255)
+#  mcn        :string(255)
+#  model      :string(255)
+#  serial_no  :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
 
 class Sensor < ActiveRecord::Base
@@ -24,7 +24,7 @@ class Sensor < ActiveRecord::Base
                 'Stage microscope']
 
   attr_accessible :ecn, :mcn, :model, :serial_no, :name, :category
-
+  has_many :calibrations, dependent: :destroy
   validates :serial_no, :numericality => {:allow_blank => true}
   validates_uniqueness_of :ecn, :mcn,  :allow_blank => true
   validate :either_mcn_or_ecn_present?

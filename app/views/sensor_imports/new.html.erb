@@ -1,3 +1,4 @@
+<% provide(:title, 'Import sensor') %>
 <h1>Sensor Import</h1>
 
 <p>A CSV or Excel (.xls or .xlsx) file can be used to import records. The first row should be the column names. The following columns are allowed.</p>
@@ -26,16 +27,8 @@
 <p>If an <strong>id</strong> is supplied it will update the matching record instead of creating a new one.</p>
 
 <%= form_for @sensor_import do |f| %>
-    <% if @sensor_import.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@sensor_import.errors.count, "error") %> prohibited this import from completing:</h2>
-          <ul>
-            <% @sensor_import.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-            <% end %>
-          </ul>
-        </div>
-    <% end %>
+
+    <%= render 'shared/ierror_messages', object: f.object %>
 
     <div class="field">
       <%= f.file_field :file %>

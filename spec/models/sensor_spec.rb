@@ -2,15 +2,15 @@
 #
 # Table name: sensors
 #
-#  id          :integer          not null, primary key
-#  name        :string(255)
-#  type        :string(255)
-#  ecn         :integer
-#  mcn         :string(255)
-#  model       :string(255)
-#  serial_no   :integer
-#  created_at  :datetime         not null
-#  updated_at  :datetime         not null
+#  id         :integer          not null, primary key
+#  name       :string(255)
+#  category   :string(255)
+#  ecn        :string(255)
+#  mcn        :string(255)
+#  model      :string(255)
+#  serial_no  :integer
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
 #
 
 require 'spec_helper'

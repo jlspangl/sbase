@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130311144718) do
+ActiveRecord::Schema.define(:version => 20130311183358) do
+
+  create_table "calibrations", :force => true do |t|
+    t.string   "filename"
+    t.date     "cal_date"
+    t.date     "expiration_date"
+    t.float    "range_max",       :default => 0.0
+    t.float    "range_min",       :default => 0.0
+    t.integer  "sensor_id"
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
+  end
+
+  add_index "calibrations", ["sensor_id", "cal_date"], :name => "index_calibrations_on_sensor_id_and_cal_date"
 
   create_table "sensors", :force => true do |t|
     t.string   "name"

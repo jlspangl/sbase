@@ -2,80 +2,48 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae58a27-0be2-481a-be29-e6dbd7808f3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/sensor_import_example.PNG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130301200819__add_remembertoken_and_admin_to_users.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130303001710_create_sensors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130303204639_add_indexes_to_sensors.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_error_messages.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sensors/_form.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sensors/_sensor.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/requests/authentication_pages_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sensors/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/factories.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sensors/index.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sensors/index.xls.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sensor_imports/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sensors/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/sensor.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/sensor_import.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/models/sensor_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/sensors.css.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/sensors.js.coffee" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/sensors_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/sensors_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/show.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/static_pages_controller_spec.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/controllers/users_controller_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/shared/_ierror_messages.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/calibration_import.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/calibration_imports_controller.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/calibration_imports/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sensor_import_example.PNG" afterPath="$PROJECT_DIR$/app/assets/images/sensor_import_example.PNG" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/factories.rb" afterPath="$PROJECT_DIR$/spec/factories.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sensor_imports/new.html.erb" afterPath="$PROJECT_DIR$/app/views/sensor_imports/new.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbase.iml" afterPath="$PROJECT_DIR$/.idea/sbase.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/requests/user_pages_spec.rb" afterPath="$PROJECT_DIR$/spec/requests/user_pages_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/sensor.rb" afterPath="$PROJECT_DIR$/app/models/sensor.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/sensor_import.rb" afterPath="$PROJECT_DIR$/app/models/sensor_import.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/sensor_spec.rb" afterPath="$PROJECT_DIR$/spec/models/sensor_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sbase.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="C:/Sites/rails_projects/sample_project/.idea/workspace.xml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361925348746" ignored="false" />
-    <file path="/Dummy.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363013208913" ignored="false" />
+    <file path="/Dummy.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363207587600" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/views/users/_follow.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361921507366" ignored="false" />
     <file path="/database.yml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361923337153" ignored="false" />
     <file path="/README.rdoc" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361924221609" ignored="false" />
     <file path="/static_pages_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362182661757" ignored="false" />
     <file path="/application_helper_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361994378199" ignored="false" />
-    <file path="/home.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362346432033" ignored="false" />
+    <file path="/home.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363037503145" ignored="false" />
     <file path="/help.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362255499107" ignored="false" />
     <file path="/application_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362085750455" ignored="false" />
     <file path="/_footer.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361999844122" ignored="false" />
-    <file path="/_header.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362345279487" ignored="false" />
-    <file path="/routes.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362364624874" ignored="false" />
-    <file path="/a.dummy" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363019064179" ignored="false" />
+    <file path="/_header.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363034592696" ignored="false" />
+    <file path="/routes.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363034839801" ignored="false" />
+    <file path="/a.dummy" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363216468577" ignored="false" />
     <file path="/test.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362073112297" ignored="false" />
     <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/OLTARIS_2012/config/environments/test.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362073114536" ignored="false" />
     <file path="/Gemfile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362962535943" ignored="false" />
     <file path="/*.regexp" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362179595770" ignored="false" />
     <file path="/utilities.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362085304006" ignored="false" />
     <file path="/user_pages_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362159966289" ignored="false" />
-    <file path="/Ruby Console" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362254897165" ignored="false" />
+    <file path="/Ruby Console" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363032741539" ignored="false" />
     <file path="/user_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362093641692" ignored="false" />
-    <file path="/factories.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362096317118" ignored="false" />
-    <file path="/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363022457308" ignored="false" />
+    <file path="/factories.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363029050067" ignored="false" />
+    <file path="/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363218924099" ignored="false" />
     <file path="/show.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362174839006" ignored="false" />
     <file path="/users_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362260781327" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/config/routes.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362259656736" ignored="false" />
@@ -109,12 +77,21 @@
     <file path="/_user.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362356708645" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/views/users/_user.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362356708645" ignored="false" />
     <file path="/sensors_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362357552581" ignored="false" />
-    <file path="/sensor_imports_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362367385410" ignored="false" />
-    <file path="/sensor_import.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362366137355" ignored="false" />
+    <file path="/sensor_imports_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363217980825" ignored="false" />
+    <file path="/sensor_import.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363217504595" ignored="false" />
     <file path="/index.xls.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363019165514" ignored="false" />
     <file path="/edit.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362968093973" ignored="false" />
     <file path="/_form.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362968109286" ignored="false" />
     <file path="/20130311144718_fix_column_name.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363013321206" ignored="false" />
+    <file path="/20130311180431_create_calibrations.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363025301594" ignored="false" />
+    <file path="/schema.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363025894522" ignored="false" />
+    <file path="/calibration.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363033155482" ignored="false" />
+    <file path="/calibration_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363033137283" ignored="false" />
+    <file path="/20130311183358_create_calibrations.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363031343428" ignored="false" />
+    <file path="/calibrations_imports_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363042244678" ignored="false" />
+    <file path="/calibration_import.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363215299514" ignored="false" />
+    <file path="/calibration_imports_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363219361113" ignored="false" />
+    <file path="/_ierror_messages.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363218866215" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,37 +113,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sensor_imports/new.html.erb">
+      <file leaf-file-name="calibration_imports_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/calibration_imports_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="32" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-11.923077">
+            <state line="23" column="76" selection-start="632" selection-end="632" vertical-scroll-proportion="0.50386596">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sensor_imports_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="sensor_imports_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sensors/_form.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="85" selection-start="825" selection-end="897" vertical-scroll-proportion="-7.1923075">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="orig_new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/sensors/orig_new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="62" selection-start="2530" selection-end="2556" vertical-scroll-proportion="-7.3461537">
+            <state line="17" column="13" selection-start="361" selection-end="535" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -195,22 +154,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/sensors/index.html.erb" />
+        <option value="$PROJECT_DIR$/spec/factories.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130311183358_create_calibrations.rb" />
+        <option value="$PROJECT_DIR$/spec/models/calibration_spec.rb" />
+        <option value="$PROJECT_DIR$/app/models/calibration.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/calibrations_imports_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+        <option value="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.12/lib/action_controller/metal/flash.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/calibration_import.rb" />
+        <option value="$PROJECT_DIR$/app/models/sensor_import.rb" />
         <option value="$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130303204639_add_indexes_to_sensors.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/sensors/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/sensors/edit.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130311144718_fix_column_name.rb" />
-        <option value="$PROJECT_DIR$/app/views/sensors/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/sensors/_sensor.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/sensors/index.xls.erb" />
-        <option value="$PROJECT_DIR$/spec/models/sensor_spec.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/sensors_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/sensor.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_ierror_messages.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sensor_imports/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/calibration_imports/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/calibration_imports_controller.rb" />
       </list>
     </option>
   </component>
@@ -222,10 +181,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="120" />
-    <option name="y" value="38" />
-    <option name="width" value="1165" />
-    <option name="height" value="836" />
+    <option name="x" value="1718" />
+    <option name="y" value="68" />
+    <option name="width" value="1344" />
+    <option name="height" value="923" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -253,7 +212,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,6 +219,60 @@
               <option name="myItemId" value="sbase" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roo (v1.10.3, ruby-1.9.3-p125) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roo (v1.10.3, ruby-1.9.3-p125) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="roo (v1.10.3, ruby-1.9.3-p125) [gem]" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -282,33 +294,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="erb" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scaffold" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,56 +309,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="db" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -391,6 +327,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static_pages" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -457,6 +415,50 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sensor_imports" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="calibration_imports" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -545,28 +547,6 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -593,29 +573,32 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="C:/Sites/rails_projects/sample_project" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="C:/Sites/rails_projects/sample_project" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\sbase\app\assets\images" />
-      <recent name="C:\sbase\app\views\sensors" />
-      <recent name="C:\sbase\app\assets\stylesheets" />
+      <recent name="C:\sbase\app\views\shared" />
+      <recent name="C:\sbase\app\models" />
+      <recent name="C:\sbase\app\views" />
+      <recent name="C:\sbase\app\views\sensor_imports" />
+      <recent name="C:\sbase\app\controllers" />
     </key>
   </component>
-  <component name="RunManager" selected="Rake.db:migrate">
+  <component name="RunManager" selected="Rails.Development: sbase">
     <configuration default="false" name="IRB console" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="sbase" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -653,6 +636,25 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Rails console: sbase" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
+      <module name="sbase" />
+      <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <IRB_RUN_CONFIG NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <IRB_RUN_CONFIG NAME="SHOULD_USE_SDK" VALUE="false" />
+      <IRB_RUN_CONFIG NAME="ALTERN_SDK_NAME" VALUE="" />
+      <IRB_RUN_CONFIG NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/script/rails" />
+      <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console development" />
+      <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -888,19 +890,21 @@
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method />
     </configuration>
-    <list size="6">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Rails.Production: sbase" />
       <item index="1" class="java.lang.String" itemvalue="Rails.Development: sbase" />
       <item index="2" class="java.lang.String" itemvalue="Rake.test" />
       <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="4" class="java.lang.String" itemvalue="IRB console.IRB console" />
       <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="6" class="java.lang.String" itemvalue="IRB console.Rails console: sbase" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: sbase" />
         <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
-        <item index="2" class="java.lang.String" itemvalue="IRB console.IRB console" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="3" class="java.lang.String" itemvalue="IRB console.IRB console" />
       </list>
     </recent_temporary>
   </component>
@@ -941,24 +945,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="120" y="38" width="1165" height="836" extended-state="0" />
+    <frame x="1718" y="68" width="1344" height="923" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32732317" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3309958" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29088914" sideWeight="0.9965783" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17197452" sideWeight="0.6735823" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30243024" sideWeight="0.6545454" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34653464" sideWeight="0.6690042" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2984496" sideWeight="0.70911086" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943293" sideWeight="0.6545454" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34642357" sideWeight="0.9911817" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.9911817" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1022,65 +1026,23 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/sensors/edit.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/sensors_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="51" selection-start="109" selection-end="109" vertical-scroll-proportion="0.086513996">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130311144718_fix_column_name.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="109" selection-end="109" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sensors/_sensor.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/calibration_import.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="101" selection-end="101" vertical-scroll-proportion="0.12">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sensors/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="316" selection-end="316" vertical-scroll-proportion="0.33737865">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="11" selection-start="978" selection-end="978" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="14" selection-start="479" selection-end="479" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sensors/index.xls.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="60" selection-start="1100" selection-end="1100" vertical-scroll-proportion="-8.846154">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/models/sensor_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="49" selection-start="783" selection-end="783" vertical-scroll-proportion="0.35476717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sensors_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="29" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
+        <state line="0" column="23" selection-start="5" selection-end="23" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1094,42 +1056,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/sensor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="2" selection-start="722" selection-end="722" vertical-scroll-proportion="0.0">
+        <state line="15" column="6" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sensors/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sensors/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sensors/_sensor.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/sensor_import.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/sensors/orig_new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="62" selection-start="2530" selection-end="2556" vertical-scroll-proportion="-7.3461537">
+        <state line="9" column="63" selection-start="237" selection-end="237" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sensors/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="85" selection-start="825" selection-end="897" vertical-scroll-proportion="-7.1923075">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_error_messages.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="11" selection-start="0" selection-end="337" vertical-scroll-proportion="-7.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_ierror_messages.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="95" selection-start="193" selection-end="193" vertical-scroll-proportion="-1.9615384">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/sensor_imports/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="32" selection-start="1257" selection-end="1257" vertical-scroll-proportion="-11.923077">
+        <state line="30" column="62" selection-start="793" selection-end="854" vertical-scroll-proportion="-19.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/calibration_imports/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="41" selection-start="743" selection-end="844" vertical-scroll-proportion="-19.615385">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="17" column="13" selection-start="361" selection-end="535" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/calibration_imports_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="76" selection-start="632" selection-end="632" vertical-scroll-proportion="0.50386596">
           <folding />
         </state>
       </provider>

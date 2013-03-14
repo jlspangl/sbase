@@ -1,0 +1,32 @@
+<% provide(:title, 'Import calibration') %>
+<h1>Import Calibration  Spreadsheet</h1>
+
+
+<p>
+  First choose the calibration spreadsheet and then
+  select the <b>Upload Calibration File</b> button
+  to import it into the database.
+</p>
+<div class="row">
+  <aside class="span5">
+    <%= form_for @calibration_import do |f| %>
+
+        <%= render 'shared/ierror_messages', object: f.object %>
+
+        <div class="field">
+          <%= f.file_field :file, {:accept=>'application/excel'} %>
+        </div>
+        <div class="buttons">
+          <%= f.submit "Upload Calibration File", class: "btn btn-primary"   %>
+          <%= link_to "Cancel", root_path, class: "btn btn-primary" %>
+        </div>
+    <% end %>
+  </aside>
+
+  <div class="span6">
+    <p>
+      &nbsp;&nbsp;&nbsp;<%= image_tag "calibration_import_example.PNG" %>
+    </p>
+
+  </div>
+</div>

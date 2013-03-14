@@ -4,4 +4,11 @@ FactoryGirl.define do
     password "s42921"
     password_confirmation "s42921"
   end
+  factory :sensor do
+    name "some sensor"
+    category "LVD transducer"
+    mcn "A999999"
+    model "632-11E"
+    serial_no "2167"
+  end
 end
