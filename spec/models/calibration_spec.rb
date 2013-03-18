@@ -2,15 +2,17 @@
 #
 # Table name: calibrations
 #
-#  id              :integer          not null, primary key
-#  filename        :string(255)
-#  cal_date        :date
-#  expiration_date :date
-#  range_max       :float            default(0.0)
-#  range_min       :float            default(0.0)
-#  sensor_id       :integer
-#  created_at      :datetime         not null
-#  updated_at      :datetime         not null
+#  id               :integer          not null, primary key
+#  orig_filename    :string(255)
+#  measurement_unit :string(255)
+#  calibration_date :date
+#  expiration_date  :date
+#  calibration_max  :float            default(0.0)
+#  calibration_min  :float            default(0.0)
+#  range            :float            default(0.0)
+#  created_at       :datetime         not null
+#  updated_at       :datetime         not null
+#  folder           :string(255)
 #
 
 require 'spec_helper'

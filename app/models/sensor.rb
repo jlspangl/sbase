@@ -24,12 +24,16 @@ class Sensor < ActiveRecord::Base
                 'Stage microscope']
 
   attr_accessible :ecn, :mcn, :model, :serial_no, :name, :category
-  has_many :calibrations, dependent: :destroy
+
+  has_many :measurements
+  has_many  :calibrations, :through => :measurements
+
   validates :serial_no, :numericality => {:allow_blank => true}
   validates_uniqueness_of :ecn, :mcn,  :allow_blank => true
   validate :either_mcn_or_ecn_present?
   validates_inclusion_of :category, in: CATEGORIES,  :allow_blank => true
 
+  validates_acceptance_of :confirmation, :on => :create
 
   #
   #def self.import(file)

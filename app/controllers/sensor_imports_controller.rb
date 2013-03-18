@@ -13,7 +13,7 @@ class SensorImportsController < ApplicationController
       end
     else
       @sensor_import = SensorImport.new
-      flash.now[:error] = "No file to import. Please select a spreadsheet using the file chooser."
+      flash.now[:error] = "Please use the file-chooser to select the excel file."
       render :new
     end
   end

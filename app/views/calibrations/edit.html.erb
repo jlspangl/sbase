@@ -1,0 +1,37 @@
+<% provide(:title, 'Edit calibration') %>
+<h2>Calibration for Sensor (<%=sensor_label(@calibration.sensor) %>)</h2>
+<p style="margin-left: 10%;margin-right: 10%;margin-bottom: 20px">
+The form below is initialized with information that was read from the uploaded excel file.
+Please correct any values that were wrongly read or missing from the excel file.
+When you are done, selection of  <b>Confirm import of calibration</b> enters the
+calibration into the database.
+Selection of the <b>Cancel</b> button returns you to the
+home page without importing the calibration into the database.
+
+</p>
+<div class="row">
+  <div class="span6 offset3">
+    <%= simple_form_for(@calibration, :html => {:class => 'form-horizontal'}) do |f| %>
+
+        <%= display_base_errors @calibration %>
+
+        <%= f.input :orig_filename, :label => 'Name of excel file', :readonly=>true%>
+
+        <%= f.input :calibration_date, :label => 'Calibration date'%>
+
+        <%= f.input :expiration_date, :label => 'Expiration date'%>
+
+        <%= f.input :range, :label => 'Range'%>
+
+        <%= f.input :calibration_min, :label => 'Calibration minimum'%>
+
+        <%= f.input :calibration_max, :label => 'Calibration maximum'%>
+
+        <%= f.input :range_min, :label => 'Range '%>
+
+        <%= f.button :submit, 'Confirm import of calibration', :class => "btn btn-primary" %>
+
+        <%= f.button :submit, 'Cancel', :class => "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

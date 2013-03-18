@@ -6,7 +6,7 @@ module SensorsHelper
     elsif sensor.mcn.blank?
       "#{sensor.ecn}"
     else
-      "#{sensor.mcn}/#{ensor.ecn}"
+      "#{sensor.mcn}/#{sensor.ecn}"
     end
   end
 

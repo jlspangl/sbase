@@ -1,0 +1,35 @@
+        import_sensors POST   /sensors/import(.:format)          sensors#import
+               sensors GET    /sensors(.:format)                 sensors#index
+                       POST   /sensors(.:format)                 sensors#create
+            new_sensor GET    /sensors/new(.:format)             sensors#new
+           edit_sensor GET    /sensors/:id/edit(.:format)        sensors#edit
+                sensor GET    /sensors/:id(.:format)             sensors#show
+                       PUT    /sensors/:id(.:format)             sensors#update
+                       DELETE /sensors/:id(.:format)             sensors#destroy
+   verify_calibrations GET    /calibrations/verify(.:format)     calibrations#verify
+          calibrations GET    /calibrations(.:format)            calibrations#index
+                       POST   /calibrations(.:format)            calibrations#create
+       new_calibration GET    /calibrations/new(.:format)        calibrations#new
+      edit_calibration GET    /calibrations/:id/edit(.:format)   calibrations#edit
+           calibration GET    /calibrations/:id(.:format)        calibrations#show
+                       PUT    /calibrations/:id(.:format)        calibrations#update
+                       DELETE /calibrations/:id(.:format)        calibrations#destroy
+        sensor_imports POST   /sensor_imports(.:format)          sensor_imports#create
+     new_sensor_import GET    /sensor_imports/new(.:format)      sensor_imports#new
+   calibration_imports POST   /calibration_imports(.:format)     calibration_imports#create
+new_calibration_import GET    /calibration_imports/new(.:format) calibration_imports#new
+                 users GET    /users(.:format)                   users#index
+                       POST   /users(.:format)                   users#create
+              new_user GET    /users/new(.:format)               users#new
+             edit_user GET    /users/:id/edit(.:format)          users#edit
+                  user GET    /users/:id(.:format)               users#show
+                       PUT    /users/:id(.:format)               users#update
+                       DELETE /users/:id(.:format)               users#destroy
+              sessions POST   /sessions(.:format)                sessions#create
+           new_session GET    /sessions/new(.:format)            sessions#new
+               session DELETE /sessions/:id(.:format)            sessions#destroy
+                signup        /signup(.:format)                  users#new
+                signin        /signin(.:format)                  sessions#new
+               signout DELETE /signout(.:format)                 sessions#destroy
+                  root        /                                  static_pages#home
+                  help        /help(.:format)                    static_pages#help

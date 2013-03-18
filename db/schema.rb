@@ -11,20 +11,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130311183358) do
+ActiveRecord::Schema.define(:version => 20130317233718) do
 
   create_table "calibrations", :force => true do |t|
-    t.string   "filename"
-    t.date     "cal_date"
+    t.string   "orig_filename"
+    t.string   "measurement_unit"
+    t.date     "calibration_date"
     t.date     "expiration_date"
-    t.float    "range_max",       :default => 0.0
-    t.float    "range_min",       :default => 0.0
-    t.integer  "sensor_id"
-    t.datetime "created_at",                       :null => false
-    t.datetime "updated_at",                       :null => false
+    t.float    "calibration_max",  :default => 0.0
+    t.float    "calibration_min",  :default => 0.0
+    t.float    "range",            :default => 0.0
+    t.datetime "created_at",                        :null => false
+    t.datetime "updated_at",                        :null => false
+    t.string   "folder"
   end
 
-  add_index "calibrations", ["sensor_id", "cal_date"], :name => "index_calibrations_on_sensor_id_and_cal_date"
+  create_table "measurements", :force => true do |t|
+    t.integer  "sensor_id"
+    t.integer  "calibration_id"
+    t.integer  "position"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  add_index "measurements", ["calibration_id"], :name => "index_measurements_on_calibration_id"
+  add_index "measurements", ["sensor_id", "calibration_id"], :name => "index_measurements_on_sensor_id_and_calibration_id", :unique => true
+  add_index "measurements", ["sensor_id"], :name => "index_measurements_on_sensor_id"
 
   create_table "sensors", :force => true do |t|
     t.string   "name"

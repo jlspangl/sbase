@@ -4,9 +4,12 @@ Sbase::Application.routes.draw do
     collection {post :import}
   end
 
+  resources :calibrations do
+    collection {get :verify}
+  end
+
   resources :sensor_imports, only: [:new, :create]
 
-  resources :calibrations
 
   resources :calibration_imports, only: [:new, :create]
 
