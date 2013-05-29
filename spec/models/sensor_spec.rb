@@ -8,9 +8,10 @@
 #  ecn        :string(255)
 #  mcn        :string(255)
 #  model      :string(255)
-#  serial_no  :integer
+#  serial     :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  tag        :string(255)
 #
 
 require 'spec_helper'
@@ -19,7 +20,7 @@ describe Sensor do
   before { @sensor = Sensor.new(name: "LVD TRANSDUCER",
                                 category: "unknown",
                                 model: "0246-0000",
-                                serial_no: 4601,
+                                serial: 4601,
                                 mcn: "A024621") }
 
 
@@ -30,7 +31,7 @@ describe Sensor do
   it { should respond_to(:ecn) }
   it { should respond_to(:mcn) }
   it { should respond_to(:model) }
-  it { should respond_to(:serial_no) }
+  it { should respond_to(:serial) }
 
   describe "when both MCN and ECN are not present" do
     before do
@@ -54,7 +55,7 @@ describe Sensor do
       sensor_with_same_ecn = @sensor.dup
       sensor_with_same_ecn.ecn = ""
       sensor_with_same_ecn.mcn = "9999"
-      sensor_with_same_ecn.serial_no = ""
+      sensor_with_same_ecn.serial = ""
     end
     it { should be_valid }
   end
@@ -66,7 +67,7 @@ describe Sensor do
       sensor_with_same_ecn = @sensor.dup
       sensor_with_same_ecn.ecn = @sensor.ecn
       sensor_with_same_ecn.mcn = "8888"
-      sensor_with_same_ecn.serial_no = ""
+      sensor_with_same_ecn.serial = ""
       sensor_with_same_ecn.save
     end
     it { should_not be_valid }

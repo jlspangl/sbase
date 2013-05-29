@@ -1,9 +1,15 @@
 class SensorsController < ApplicationController
   respond_to :html, :csv
+  #helper_method :sort_column, :sort_direction
 
   def index
-    @sensors = Sensor.paginate(page: params[:page])
-    respond_with @sensors
+    @search = Sensor.search(params[:q])
+    @sensors = @search.result(:distinct => true)
+    @sensors = @sensors.paginate(:page => params[:page], :per_page => 5)
+  end
+
+  def show
+    @sensor  = Sensor.find(params[:id])
   end
 
   def new
@@ -41,5 +47,14 @@ class SensorsController < ApplicationController
     redirect_to sensors_url
   end
 
+  #private
+  #
+  #def sort_column
+  #  Sensor.column_names.include?(params[:sort]) ? params[:sort] : "updated_at"
+  #end
+  #
+  #def sort_direction
+  #  %w[asc desc].include?(params[:direction]) ? params[:direction] : "asc"
+  #end
 
 end

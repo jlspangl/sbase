@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae58a27-0be2-481a-be29-e6dbd7808f3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130315220814_add_dirty_to_calibrations.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/calibrations/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/calibrations/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/calibrations/verify.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130311183358_create_calibrations.rb" afterPath="$PROJECT_DIR$/db/migrate/20130311183358_create_calibrations.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/down_arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/up_arrow.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/calibrations/_calibration.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/calibrations/index.html.erb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/sensors/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130303204639_add_indexes_to_sensors.rb" afterPath="$PROJECT_DIR$/db/migrate/20130303204639_add_indexes_to_sensors.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sensors/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/sensors/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sensors/_sensor.html.erb" afterPath="$PROJECT_DIR$/app/views/sensors/_sensor.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/calibration.rb" afterPath="$PROJECT_DIR$/app/models/calibration.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/calibration_import.rb" afterPath="$PROJECT_DIR$/app/models/calibration_import.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/calibration_imports_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/calibration_imports_controller.rb" />
@@ -14,97 +21,459 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/calibrations_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/calibrations_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/calibrations_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/calibrations_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/calibrations/edit.html.erb" afterPath="$PROJECT_DIR$/app/views/calibrations/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/factories.rb" afterPath="$PROJECT_DIR$/spec/factories.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sensors/index.html.erb" afterPath="$PROJECT_DIR$/app/views/sensors/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sensors/index.xls.erb" afterPath="$PROJECT_DIR$/app/views/sensors/index.xls.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/sensors/orig_new.html.erb" afterPath="$PROJECT_DIR$/app/views/sensors/orig_new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbase.iml" afterPath="$PROJECT_DIR$/.idea/sbase.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/sensor.rb" afterPath="$PROJECT_DIR$/app/models/sensor.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/sensor_import.rb" afterPath="$PROJECT_DIR$/app/models/sensor_import.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/sensor_spec.rb" afterPath="$PROJECT_DIR$/spec/models/sensor_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sensors_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sensors_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/sensors_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/sensors_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/calibrations/verify.html.erb" afterPath="$PROJECT_DIR$/app/views/calibrations/verify.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sbase.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="C:/Sites/rails_projects/sample_project/.idea/workspace.xml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361925348746" ignored="false" />
-    <file path="/Dummy.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363563401553" ignored="false" />
+    <file path="/Dummy.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369855024009" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/views/users/_follow.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361921507366" ignored="false" />
-    <file path="/database.yml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361923337153" ignored="false" />
+    <file path="/database.yml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368030608859" ignored="false" />
     <file path="/README.rdoc" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361924221609" ignored="false" />
     <file path="/static_pages_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362182661757" ignored="false" />
     <file path="/application_helper_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361994378199" ignored="false" />
     <file path="/home.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363037503145" ignored="false" />
     <file path="/help.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362255499107" ignored="false" />
-    <file path="/application_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362085750455" ignored="false" />
+    <file path="/application_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367335053149" ignored="false" />
     <file path="/_footer.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1361999844122" ignored="false" />
-    <file path="/_header.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363034592696" ignored="false" />
-    <file path="/routes.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363376805186" ignored="false" />
-    <file path="/a.dummy" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363566181072" ignored="false" />
+    <file path="/_header.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364163406694" ignored="false" />
+    <file path="/routes.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369152589014" ignored="false" />
+    <file path="/a.dummy" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363735670253" ignored="false" />
     <file path="/test.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362073112297" ignored="false" />
     <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/OLTARIS_2012/config/environments/test.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362073114536" ignored="false" />
-    <file path="/Gemfile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362962535943" ignored="false" />
-    <file path="/*.regexp" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362179595770" ignored="false" />
+    <file path="/Gemfile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369432335584" ignored="false" />
+    <file path="/*.regexp" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369152728382" ignored="false" />
     <file path="/utilities.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362085304006" ignored="false" />
     <file path="/user_pages_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362159966289" ignored="false" />
-    <file path="/Ruby Console" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363566901643" ignored="false" />
+    <file path="/Ruby Console" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369327756302" ignored="false" />
     <file path="/user_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362093641692" ignored="false" />
     <file path="/factories.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363029050067" ignored="false" />
-    <file path="/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363283069606" ignored="false" />
-    <file path="/show.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362174839006" ignored="false" />
-    <file path="/users_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362260781327" ignored="false" />
+    <file path="/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368662994967" ignored="false" />
+    <file path="/show.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368652440406" ignored="false" />
+    <file path="/users_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368733597276" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/config/routes.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362259656736" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/models/user.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362267357413" ignored="false" />
     <file path="/20130301200819__add_remembertoken_and_admin_to_users.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362168636405" ignored="false" />
     <file path="/users_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362169482103" ignored="false" />
-    <file path="/sessions_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362179869829" ignored="false" />
+    <file path="/sessions_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367018712981" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/views/layouts/_header.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362172259065" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/log/development.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362347406147" ignored="false" />
-    <file path="/custom.css.scss" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363299095274" ignored="false" />
+    <file path="/custom.css.scss" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364519721417" ignored="false" />
     <file path="/sessions_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362179471802" ignored="false" />
-    <file path="/user.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362267348401" ignored="false" />
+    <file path="/user.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368731553675" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/spec/controllers/static_pages_controller_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362181877218" ignored="false" />
     <file path="/authentication_pages_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362182436534" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/Gemfile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362262157333" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/controllers/static_pages_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362256812564" ignored="false" />
-    <file path="/static_pages_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362255161933" ignored="false" />
+    <file path="/static_pages_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369334625988" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/views/static_pages/help.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362255500293" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/config/application.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362262908473" ignored="false" />
-    <file path="/application.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362262907852" ignored="false" />
+    <file path="/application.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369333862240" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/controllers/users_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362367282177" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/views/users/index.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362259511902" ignored="false" />
-    <file path="/index.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362366884124" ignored="false" />
+    <file path="/index.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368558270078" ignored="false" />
     <file path="/sensor_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363019238260" ignored="false" />
-    <file path="/20130303001710_create_sensors.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362272327429" ignored="false" />
-    <file path="/sensor.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363565053392" ignored="false" />
+    <file path="/20130303001710_create_sensors.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364240879617" ignored="false" />
+    <file path="/sensor.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364500485039" ignored="false" />
     <file path="/20130303204639_add_indexes_to_sensors.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362343850244" ignored="false" />
-    <file path="/sensors_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362369759223" ignored="false" />
+    <file path="/sensors_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364493148676" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/views/static_pages/home.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362346440144" ignored="false" />
-    <file path="/_sensor.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362358052456" ignored="false" />
-    <file path="/_user.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362356708645" ignored="false" />
+    <file path="/_sensor.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364245768140" ignored="false" />
+    <file path="/_user.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368563476681" ignored="false" />
     <file path="C:/Sites/rails_projects/sample_project/app/views/users/_user.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362356708645" ignored="false" />
     <file path="/sensors_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363374000652" ignored="false" />
     <file path="/sensor_imports_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363382156119" ignored="false" />
-    <file path="/sensor_import.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363217504595" ignored="false" />
+    <file path="/sensor_import.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364502287603" ignored="false" />
     <file path="/index.xls.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363019165514" ignored="false" />
-    <file path="/edit.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363373366302" ignored="false" />
-    <file path="/_form.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362968109286" ignored="false" />
+    <file path="/edit.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368640792167" ignored="false" />
+    <file path="/_form.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363813383437" ignored="false" />
     <file path="/20130311144718_fix_column_name.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363013321206" ignored="false" />
     <file path="/20130311180431_create_calibrations.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363025301594" ignored="false" />
     <file path="/schema.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363025894522" ignored="false" />
-    <file path="/calibration.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363560086141" ignored="false" />
+    <file path="/calibration.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364070586436" ignored="false" />
     <file path="/calibration_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363033137283" ignored="false" />
     <file path="/20130311183358_create_calibrations.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363371662934" ignored="false" />
     <file path="/calibrations_imports_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363042244678" ignored="false" />
-    <file path="/calibration_import.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363567578656" ignored="false" />
-    <file path="/calibration_imports_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363567775573" ignored="false" />
+    <file path="/calibration_import.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364523453342" ignored="false" />
+    <file path="/calibration_imports_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363639284917" ignored="false" />
     <file path="/_ierror_messages.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363218866215" ignored="false" />
-    <file path="/calibrations_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363486387411" ignored="false" />
-    <file path="/calibrations_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363391783382" ignored="false" />
+    <file path="/calibrations_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364519767012" ignored="false" />
+    <file path="/calibrations_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364078481885" ignored="false" />
     <file path="/20130315180245_create_calibrations_sensors.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363370728510" ignored="false" />
     <file path="/calibrations_sensor.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363377611525" ignored="false" />
-    <file path="/development.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363381619732" ignored="false" />
-    <file path="/verify.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363392032760" ignored="false" />
+    <file path="/development.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367955344061" ignored="false" />
+    <file path="/verify.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363818247987" ignored="false" />
     <file path="/20130315220814_add_dirty_to_calibrations.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363462021155" ignored="false" />
     <file path="/measurement.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363563193995" ignored="false" />
     <file path="/20130317233718_add_folder_to_calibrations.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363563612691" ignored="false" />
+    <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/OLTARIS_2012/app/models/Copy of project.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363568305763" ignored="false" />
+    <file path="/xcalibration_import.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363624471054" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics/Makefile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363729673575" ignored="false" />
+    <file path="/Makefile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365987359641" ignored="false" />
+    <file path="/wline.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363987221043" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/Utilities/Kinematics/wline.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363730480762" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/Utilities/Kinematics/Kinematics.api.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364585725857" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Create_FOR.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364573350279" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Create_Transformation.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364573893678" ignored="false" />
+    <file path="/20130320221200_add_mode_to_calibrations.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363817591607" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Destroy_FOR.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364573787015" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/OrientLocal.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364573893678" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics/FlightPath_Demonstrator.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364599631919" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/OrientGlobal.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364573893678" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Velocity.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364578185571" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Acceleration.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364578238618" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Jerk.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364578392756" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Position.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364573893678" ignored="false" />
+    <file path="/Acceleration.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364253042931" ignored="false" />
+    <file path="/Velocity.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363910354732" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Set_Transformation.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364574018576" ignored="false" />
+    <file path="/Create_FOR.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363911311557" ignored="false" />
+    <file path="/Create_Transformation.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363912212988" ignored="false" />
+    <file path="/Destroy_FOR.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364253116062" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Destroy_Transformation.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364574230029" ignored="false" />
+    <file path="/Destroy_Transformation.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363914248254" ignored="false" />
+    <file path="/OrientLocal.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363916892630" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Init.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364573117611" ignored="false" />
+    <file path="/OrientGlobal.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364252629601" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Set_FOR.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364573725340" ignored="false" />
+    <file path="/Set_Transformation.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363915146139" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Kinematics/Append_FOR.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364573502954" ignored="false" />
+    <file path="/Append_FOR.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363916280121" ignored="false" />
+    <file path="/FlightPath_Demonstrator.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364571952787" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics/wline.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363987784556" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics/Rotorcraft_Demonstrator.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364599631919" ignored="false" />
+    <file path="/Rotorcraft_Demonstrator.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364427299895" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics/FlightPath_Demonstrator.cplusplus.cpp" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364769120073" ignored="false" />
+    <file path="/FlightPath_Demonstrator.cplusplus.cpp" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364425264221" ignored="false" />
+    <file path="/_calibration.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364081965966" ignored="false" />
+    <file path="/20130325194219_change_serial_no.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364512424351" ignored="false" />
+    <file path="/Kinematics.api.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364585701456" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/Peripherals/Programs/SurfaceMover/SurfaceMover.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364578265318" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics - Copy/Rotorcraft_Demonstrator.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364252738039" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/Utilities/Kinematics/Kinematics.fwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364782334863" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/Utilities/Kinematics/Kinematics.pwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364584910668" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics - Copy/FlightPath_Demonstrator.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364252738038" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics - Copy/Acceleration.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364252738038" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics - Copy/xAcceleration.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364252738038" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Kinematics/Functions.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364574013048" ignored="false" />
+    <file path="/Kinematics.fwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364782332832" ignored="false" />
+    <file path="/Kinematics.pwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364310615932" ignored="false" />
+    <file path="/SurfaceMover.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364573074523" ignored="false" />
+    <file path="/Kinematics.api.h" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364601374008" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/Utilities/Kinematics/Kinematics.api.h" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364601375001" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/Utilities/Kinematics/Kinematics.cppwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364853113098" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/Utilities/Kinematics/Kinematics.cppwrapper - Copy.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364316560905" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics/Rotorcraft_Demonstrator.cplusplus.cpp" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364769259871" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics - Copy/FlightPath_Demonstrator.cplusplus.cpp" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364317028876" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/Kinematics - Copy/Rotorcraft_Demonstrator.cplusplus.cpp" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364317028876" ignored="false" />
+    <file path="/Rotorcraft_Demonstrator.cplusplus.cpp" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364425987733" ignored="false" />
+    <file path="/20130328192146_add_searchfield_to_sensors.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364498928819" ignored="false" />
+    <file path="/20130328231214_rename_calibration_attributes.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364512711148" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Atmosphere/AltitudeProfileAtmosphereClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364602181604" ignored="false" />
+    <file path="/Kinematics.cppwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364785374514" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/Observer.cppwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456414" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/ObserverSphereClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523679" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/FlightPath/AnoppFlightPathClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523679" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/ObserverSurfaceClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523679" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/PredictionModules/ANOPP/Utilities/AnoppInputParserClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523679" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/ObserverClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523679" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/PredictionModules/ANOPP/Utilities/AnoppOutputParserClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523679" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/ObserverDataClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523679" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/FlightPath/FlightPathClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523679" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/FlightPath/FlightPathDataStructure.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523680" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/ObserverDataStructure.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523680" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/ObserverLineClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523680" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/PredictionModules/ANOPP/AnoppCompletePredictionClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523680" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/ObserverManagerClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523680" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/PredictionModules/ANOPP/AnoppGroundPredictionClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523680" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/ObserverPointClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523680" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/ObserverPointCloudClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364845523680" ignored="false" />
+    <file path="/makeDocumentation.sh" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364920746665" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/makeDocumentation.sh" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364938906372" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/GeometryAPIManual.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365386011966" ignored="false" />
+    <file path="/AboutAPI.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364950252158" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/AboutAPI.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364951808324" ignored="false" />
+    <file path="/APIFunctions.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364941404567" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/APIFunctions.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365314764188" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/APIDescription.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364952210934" ignored="false" />
+    <file path="/APIDescription.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364952156928" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/ProgrammingAPI.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365181824229" ignored="false" />
+    <file path="/ProgrammingAPI.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364952656340" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Geometry/Geometry.api.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365295580944" ignored="false" />
+    <file path="/Geometry.api.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365188315590" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/jantest/fcnout.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365181880975" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Geometry/Geometry.fwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365190929435" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/CommandExecutive/Theory.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365181880975" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/ANOPP2/MonopoleInCube/MonopoleInCube_Demonstration.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1364997552120" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Copy of FlightPath/fcnout.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365181880975" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/FlightPath/fcnout.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365181880975" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Demos/ANOPP2/NACA0012/NACA0012_Demonstrator.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365181824229" ignored="false" />
+    <file path="/UnitTest.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365185980658" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/UnitTest.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365189456683" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/Init.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365001803977" ignored="false" />
+    <file path="/create_adf.config" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365006440082" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/create_adf.config" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365006440082" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/create_ads.config" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365006546327" ignored="false" />
+    <file path="/create_ads.config" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365006546327" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/Create_ADS.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365015850237" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/CreateAcousticDataSurface.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366142341995" ignored="false" />
+    <file path="/CreateAcousticDataSurface.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365185696054" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/CopyAcousticDataSurface.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366142295048" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/CruiseControl/online/WindowsBuildScripts/AA/AA-win32-release-verification.bat" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365027870665" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Propulsion/Demonstration.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365027870665" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/CruiseControl/online/WindowsBuildScripts/AA/AA-win64-debug-verification.bat" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365027870665" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/CruiseControl/offline/config.xml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365027870665" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/CruiseControl/online/WindowsBuildScripts/AA/AA-win64-release-verification.bat" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365027870665" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/CruiseControl/online/WindowsBuildScripts/AA/AA-win32-debug-verification.bat" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365027870665" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/AcousticAnalysis/test_acoustic_analysis" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365027870665" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/CreateWing.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366142393388" ignored="false" />
+    <file path="/CreateWing.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365185823692" ignored="false" />
+    <file path="/CopyAcousticDataSurface.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366142160404" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Geometry/build_geometry_api" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365032982410" ignored="false" />
+    <file path="/build_geometry_api" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365032982410" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/Makefile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365987607755" ignored="false" />
+    <file path="/Geometry.fwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365190929115" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Geometry/.rules.mk" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365985516869" ignored="false" />
+    <file path="/.rules.mk" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365116187334" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Geometry/WingManagerClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366136798187" ignored="false" />
+    <file path="/GeometryManagerClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365991442978" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/config/environment.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365642043186" ignored="false" />
+    <file path="/environment.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365642043186" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/ads.config" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366141669982" ignored="false" />
+    <file path="/WingManagerClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366036024207" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Geometry/GeometryManagerClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365988303573" ignored="false" />
+    <file path="/PrecisionModule.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365185387194" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/Utilities/Precision/PrecisionModule.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365185387194" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Geometry/GeometryDataStructure.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365188020890" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Geometry/WingManagerClass.unit.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366138609416" ignored="false" />
+    <file path="/WingManagerClass.unit.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365191113826" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/msg_init.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365201802442" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/GeometryAPIManual.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365385112781" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/APIFunctions.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365381392227" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/msg_createads.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365306811842" ignored="false" />
+    <file path="/msg_createads.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365306811842" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/GeometryAPIManual.out" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365316114600" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/GeometryAPIManual.aux" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365385112781" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/APIRoutines.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365316114600" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Documentation/APIManuals/Geometry/Programming.tex" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365316114600" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/Utilities/HashTable/HashTableClass2.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365385870495" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/CommandExecutive/Managers/PredictionManagerClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365385870495" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rails-2.3.12/lib/initializer.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365641860752" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/helpers/changes_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365533460193" ignored="false" />
+    <file path="/changes_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365533439074" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/controllers/changes_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365535658210" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/libxml-ruby-2.6.0-x86-mingw32/lib/libxml.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365614195538" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/libxml-ruby-2.6.0-x86-mingw32/lib/libxml/parser.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369425504547" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/libxml-ruby-2.6.0-x86-mingw32/script/test" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365614195538" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/json-1.7.7/lib/json/pure/parser.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365627083283" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/json-1.7.7/tests/test_json_string_matching.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365627083283" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/config/boot.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365640361878" ignored="false" />
+    <file path="/boot.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365638919678" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/log/development.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366737269809" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/config/preinitializer.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365640422837" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/Gemfile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366735898938" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/rails-2.3.12/lib/rails/gem_dependency.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365641860752" ignored="false" />
+    <file path="/qsubs_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366651943147" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/controllers/qsubs_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366652036415" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/models/gridengine_submission.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365713766495" ignored="false" />
+    <file path="/gridengine_submission.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365713766495" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/models/material.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365707072953" ignored="false" />
+    <file path="/material.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365722281858" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/helpers/materials_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365713588813" ignored="false" />
+    <file path="/materials_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365713582716" ignored="false" />
+    <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/OLTARIS_2012/app/models/material.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365722281858" ignored="false" />
+    <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/OLTARIS_2012/app/controllers/qsubs_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366650304367" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/lib/raadresults_reader.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366735229472" ignored="false" />
+    <file path="/raadresults_reader.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1365796960681" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/controllers/geometries_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366653679892" ignored="false" />
+    <file path="/geometries_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366936770761" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/views/geometries/index.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366054793057" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/config/routes.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366058566906" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/controllers/file_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366057753363" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/db/migrate/20130415211853_reference_point_set.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366060852500" ignored="false" />
+    <file path="/20130415211853_reference_point_set.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366060820057" ignored="false" />
+    <file path="/008_create_reference_point_sets.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366060837860" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/db/migrate/old/008_create_reference_point_sets.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366060840136" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/db/schema.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366061492358" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/config/database.yml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366127597267" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/controllers/projects_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366239579578" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/models/user_profile.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366120035941" ignored="false" />
+    <file path="/projects_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366239437101" ignored="false" />
+    <file path="/SurfaceObject.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366132695285" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Objects/WingClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366137759734" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Geometry/GeometryManagerClass.unit.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366140888236" ignored="false" />
+    <file path="/GeometryManagerClass.unit.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366139850512" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Test/Verifications/Geometry/Unit.fortran.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366142997310" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/Observer.fwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456413" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Atmosphere/Atmosphere.fwrapper.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456413" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Atmosphere/AtmosphereClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456413" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Propulsion/PropulsionConverterClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456413" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Atmosphere/AtmosphereDataStructure.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456414" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/FlightPath/.rules.mk" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456414" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Atmosphere/AtmosphereManagerClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456414" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Propulsion/EngineStateTableClass.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456414" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Atmosphere/.rules.mk" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456414" ignored="false" />
+    <file path="$USER_HOME$/Documents/_anopp2/Source/DataStructures/Observer/Observer.api.f90" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366143456414" ignored="false" />
+    <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/iFEM2/publications.html" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366227833162" ignored="false" />
+    <file path="/publications.html" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366218544894" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/views/projects/index.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366235951282" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/controllers/environments_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366309822220" ignored="false" />
+    <file path="/environments_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366309784772" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/controllers/materials_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366314802764" ignored="false" />
+    <file path="/materials_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366314802324" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/controllers/slabs_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366400748791" ignored="false" />
+    <file path="/slabs_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366400716127" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/app/controllers/trajectories_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366412284821" ignored="false" />
+    <file path="/trajectories_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366412235955" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-2.3.18/lib/action_controller/flash.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366411422107" ignored="false" />
+    <file path="$USER_HOME$/Documents/raadweb_repository/config/environments/development.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366735540457" ignored="false" />
+    <file path="C:/Sites/test_xml/log/development.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366936129991" ignored="false" />
+    <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/spaceradiation/journalarticles.html" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369402496533" ignored="false" />
+    <file path="/journalarticles.html" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369402460351" ignored="false" />
+    <file path="C:/Sites/test_xml/app/models/geometry.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366936442392" ignored="false" />
+    <file path="/geometry.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366936442392" ignored="false" />
+    <file path="C:/Sites/test_xml/Gemfile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366936683157" ignored="false" />
+    <file path="C:/Sites/test_xml/config/environments/development.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366911421490" ignored="false" />
+    <file path="C:/Sites/test_xml/app/controllers/geometries_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366936770761" ignored="false" />
+    <file path="C:/Sites/test_xml/Gemfile.lock" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366936688943" ignored="false" />
+    <file path="C:/Sites/xtest_xml/Gemfile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366938551675" ignored="false" />
+    <file path="C:/Sites/xtest_xml/config/environments/development.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366938796962" ignored="false" />
+    <file path="C:/Sites/xtest_xml/log/development.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1366938895324" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/devise/sessions/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367016550208" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/assets/stylesheets/bootstrap_and_overrides.css.scss" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367959499947" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/controllers/users_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367516241367" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/layouts/user.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367017681439" ignored="false" />
+    <file path="C:/Sites/oltairs3/config/routes.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368226008862" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/controllers/application_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367537087750" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/controllers/sessions_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367019230662" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/abstract_controller/layouts.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367019210904" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/sessions/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367961831936" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/layouts/application.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367516849760" ignored="false" />
+    <file path="C:/Sites/oltairs3/config/application.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367260751101" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/models/ability.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367260996084" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/sessions/copy_new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367265126675" ignored="false" />
+    <file path="/20130429221036_create_user_profiles.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367435165009" ignored="false" />
+    <file path="C:/Sites/oltairs3/db/migrate/20130429221036_create_user_profiles.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367435170370" ignored="false" />
+    <file path="C:/Sites/oltairs3/db/schema.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367519017372" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/controllers/registrations_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367960070564" ignored="false" />
+    <file path="/registrations_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368224832676" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/models/user.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367535640478" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/models/user_profile.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367441606597" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/registrations/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367440226567" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/helpers/application_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367959800171" ignored="false" />
+    <file path="/bootstrap_and_overrides.css.scss" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368656879123" ignored="false" />
+    <file path="C:/Sites/oltairs3/log/development.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368046248852" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/layouts/_messages.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367353334189" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/layouts/_footer.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367353634042" ignored="false" />
+    <file path="/application.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369152641828" ignored="false" />
+    <file path="C:/Sites/oltairs3/db/migrate/20130501211901_add_approved_to_user.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367446017477" ignored="false" />
+    <file path="/20130501211901_add_approved_to_user.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367443202396" ignored="false" />
+    <file path="C:/Sites/oltairs3/config/locales/devise.en.yml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368046005277" ignored="false" />
+    <file path="/devise.en.yml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367443719680" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/users/index.html.haml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367445624025" ignored="false" />
+    <file path="C:/Sites/oltairs3/notes.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367520639293" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/mailers/admin_mailer.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367525104907" ignored="false" />
+    <file path="/admin_mailer.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368733023501" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/admin_mailer/new_user_waiting_for_approval.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367536093580" ignored="false" />
+    <file path="/new_user_waiting_for_approval.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367536093580" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/admin_mailer/new_user_waiting_for_approval.text.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367536160503" ignored="false" />
+    <file path="/new_user_waiting_for_approval.text.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367536157503" ignored="false" />
+    <file path="C:/Sites/oltairs3/config/environments/development.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367527116869" ignored="false" />
+    <file path="/development.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369428576019" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/mailers/user_mailer.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367535763187" ignored="false" />
+    <file path="/user_mailer.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368733251219" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/user_mailer/welcome_to_oltaris.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367535071456" ignored="false" />
+    <file path="/welcome_to_oltaris.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367535071456" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/user_mailer/welcome_to_oltarisl.text.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367534978428" ignored="false" />
+    <file path="/welcome_to_oltarisl.text.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367535281593" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/views/user_mailer/welcome_to_oltaris.text.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367535281593" ignored="false" />
+    <file path="/application_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368660629071" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/assets/stylesheets/oltaris_homepage.css" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1367960694382" ignored="false" />
+    <file path="/oltaris_homepage.css" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368131806262" ignored="false" />
+    <file path="C:/Sites/oltairs3/app/assets/javascripts/application.js" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368023713784" ignored="false" />
+    <file path="C:/Sites/oltaris/Gemfile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369762065794" ignored="false" />
+    <file path="C:/Sites/oltaris/config/database.yml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368047194556" ignored="false" />
+    <file path="C:/Sites/oltaris/config/routes.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369152589014" ignored="false" />
+    <file path="C:/Sites/oltaris/config/application.yml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368631334910" ignored="false" />
+    <file path="/application.yml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368631334910" ignored="false" />
+    <file path="C:/Sites/oltaris/app/controllers/application_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368660630112" ignored="false" />
+    <file path="C:/Sites/oltaris/app/helpers/application_helper.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368224402112" ignored="false" />
+    <file path="C:/Sites/oltaris/config/environments/development.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369428835580" ignored="false" />
+    <file path="C:/Sites/oltaris/config/application.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369334413315" ignored="false" />
+    <file path="C:/Sites/oltaris/config/locales/devise.en.yml" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368045942571" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/sessions/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368126077723" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/sessions/_welcome_to_oltaris.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368048452710" ignored="false" />
+    <file path="C:/Sites/oltaris/app/assets/stylesheets/oltaris_homepage.css" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368132034264" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/registrations/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368662995880" ignored="false" />
+    <file path="C:/Sites/oltaris/app/controllers/registrations_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368638699925" ignored="false" />
+    <file path="C:/Sites/oltaris/app/controllers/home_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368124494323" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/layouts/devise/sessions.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368654782010" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/devise/sessions/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368654895726" ignored="false" />
+    <file path="/sessions.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368130762554" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/home/index.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368132149979" ignored="false" />
+    <file path="/20130509233746_add_username_to_users.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368142777832" ignored="false" />
+    <file path="C:/Sites/oltaris/db/migrate/20130509233746_add_username_to_users.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368142783432" ignored="false" />
+    <file path="C:/Sites/oltaris/db/schema.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368658943042" ignored="false" />
+    <file path="C:/Sites/oltaris/config/initializers/devise.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368142924832" ignored="false" />
+    <file path="/devise.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368142911553" ignored="false" />
+    <file path="C:/Sites/oltaris/app/models/user.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368731759029" ignored="false" />
+    <file path="C:/Sites/oltaris/log/development.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369764164639" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/static_pages/signedup.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368225398412" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/layouts/application.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369152641828" ignored="false" />
+    <file path="C:/Sites/oltaris/app/controllers/static_pages_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369334626874" ignored="false" />
+    <file path="/signedup.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368225385692" ignored="false" />
+    <file path="C:/Sites/oltaris/app/controllers/users_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368733597595" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/users/index.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368558270078" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/users/_user.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368563769237" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/bootstrap-will_paginate-0.0.6/lib/bootstrap-will_paginate.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368453480370" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/ransack-0.7.2/lib/ransack/search.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368472482595" ignored="false" />
+    <file path="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/ransack-0.7.2/lib/ransack/context.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368472482595" ignored="false" />
+    <file path="C:/Sites/oltaris/app/assets/stylesheets/bootstrap_and_overrides.css.scss" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369082361247" ignored="false" />
+    <file path="C:/Sites/oltaris/app/assets/javascripts/application.js" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368564368766" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/users/edit.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368663972672" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/confirmations/show.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368652440406" ignored="false" />
+    <file path="C:/Sites/oltaris/db/migrate/20130515200631_add_confirmable_to_users.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368651084428" ignored="false" />
+    <file path="/20130515200631_add_confirmable_to_users.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368651084428" ignored="false" />
+    <file path="C:/Sites/oltaris/app/controllers/confirmations_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368652846589" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/devise/passwords/new.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368656790655" ignored="false" />
+    <file path="C:/Sites/oltaris/app/assets/stylesheets/signin_page.css" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368657496685" ignored="false" />
+    <file path="/signin_page.css" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368657489005" ignored="false" />
+    <file path="/itar_notice.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368660164763" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/static_pages/itar_notice.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368660164763" ignored="false" />
+    <file path="C:/Sites/oltaris/app/models/user_profile.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368727828903" ignored="false" />
+    <file path="/user_profile.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368727352545" ignored="false" />
+    <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/OLTARIS_2012/app/controllers/admin_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368664155926" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/admin_mailer/new_user_waiting_is_approvedhtml.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368730104206" ignored="false" />
+    <file path="/new_user_waiting_is_approvedhtml.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368730104206" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/admin_mailer/new_user_waiting_is_approved.text.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368731105121" ignored="false" />
+    <file path="/new_user_waiting_is_approved.text.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368731104231" ignored="false" />
+    <file path="C:/Sites/oltaris/app/mailers/admin_mailer.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368733103927" ignored="false" />
+    <file path="C:/Sites/oltaris/app/mailers/user_mailer.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368733251219" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/user_mailer/account_activated.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1368733950343" ignored="false" />
+    <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/OLTARIS_2012/app/controllers/changes_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369254273798" ignored="false" />
+    <file path="/changes_controller.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369153849342" ignored="false" />
+    <file path="C:/Sites/oltaris/notes.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369154953855" ignored="false" />
+    <file path="/notes.txt" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369154953855" ignored="false" />
+    <file path="C:/Sites/oltaris/app/views/static_pages/change_log.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369326781316" ignored="false" />
+    <file path="/change_log.html.erb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369326781316" ignored="false" />
+    <file path="C:/Sites/oltaris/app/models/change_log.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369329966191" ignored="false" />
+    <file path="/change_log.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369339121277" ignored="false" />
+    <file path="C:/Sites/oltaris/lib/change_log.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369334263576" ignored="false" />
+    <file path="C:/Sites/oltaris/lib/changelog_reader.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369762230704" ignored="false" />
+    <file path="/changelog_reader.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369425514829" ignored="false" />
+    <file path="C:/Sites/oltaris/vendor/gems/libxml-ruby-2.6.0-x86-mingw32/libxml-ruby.gemspec" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369432640840" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,46 +495,10 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="calibration_import.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/calibration_import.rb">
+      <file leaf-file-name="static_pages_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="36" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="development.log" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/log/development.log">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calibration_imports_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/calibration_imports_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="55" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sensors_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/sensors_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="36" selection-start="462" selection-end="472" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="calibrations_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/calibrations_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="63" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
+            <state line="4" column="109" selection-start="80" selection-end="80" vertical-scroll-proportion="0.16229117">
               <folding />
             </state>
           </provider>
@@ -183,7 +516,10 @@
     <option name="ENVIRONMENT" value="development" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="SYNC_SETTING" value="DONT" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
   </component>
   <component name="GitLogSettings">
     <option name="myStructureFilterPaths" />
@@ -194,22 +530,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/helpers/calibrations_helper.rb" />
-        <option value="$PROJECT_DIR$/app/views/calibrations/verify.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130315220814_add_dirty_to_calibrations.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130316192843_create_calibrations_sensors_join_table.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/calibrations_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/calibrations_sensor.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130317202749_create_measurements.rb" />
-        <option value="$PROJECT_DIR$/app/models/measurement.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20130317233718_add_folder_to_calibrations.rb" />
-        <option value="$PROJECT_DIR$/app/models/calibration.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130328192146_add_searchfield_to_sensors.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130328192146_add_tag_to_sensors.rb" />
+        <option value="$PROJECT_DIR$/app/views/sensors/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/sensor.rb" />
-        <option value="$PROJECT_DIR$/app/models/calibration_import.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/calibration_imports_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/sensor_import.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130325194219_change_serial_no.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130328231214_rename_calibration_attributes.rb" />
         <option value="$PROJECT_DIR$/log/development.log" />
+        <option value="$PROJECT_DIR$/app/views/calibrations/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/calibrations/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/calibration_import.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/sensors_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
+        <option value="$PROJECT_DIR$/app/controllers/calibrations_controller.rb" />
       </list>
     </option>
   </component>
@@ -221,10 +557,26 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="55" />
-    <option name="y" value="97" />
-    <option name="width" value="1187" />
-    <option name="height" value="884" />
+    <option name="x" value="107" />
+    <option name="y" value="73" />
+    <option name="width" value="1215" />
+    <option name="height" value="844" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -252,6 +604,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -259,15 +612,9 @@
               <option name="myItemId" value="sbase" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sbase" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -279,10 +626,6 @@
               <option name="myItemId" value="sbase" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="log" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -294,7 +637,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="doc" />
+              <option name="myItemId" value="vendor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,7 +697,73 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sensors" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -389,6 +798,38 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sbase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -397,16 +838,15 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="vcs.Git" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Aptana RadRails Workspace/OLTARIS_2012" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Aptana RadRails Workspace/spaceradiation" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="dynamic.classpath" value="false" />
@@ -415,14 +855,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\sbase\app\views\calibrations" />
+      <recent name="C:\sbase\public" />
+      <recent name="C:\sbase\app\views\sensors" />
       <recent name="C:\sbase\app\models" />
+      <recent name="C:\sbase\app\views\calibrations" />
       <recent name="C:\sbase\app\views\shared" />
-      <recent name="C:\sbase\app\views" />
-      <recent name="C:\sbase\app\views\sensor_imports" />
     </key>
   </component>
-  <component name="RunManager" selected="IRB console.Rails console: sbase">
+  <component name="RunManager" selected="Rails.Development: sbase">
     <configuration default="false" name="IRB console" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="sbase" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -438,28 +878,6 @@
       <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="C:/RailsInstaller/Ruby1.9.3/bin/irb" />
       <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="--prompt simple" />
       <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
-      <module name="sbase" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -498,6 +916,28 @@
       <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:rollback" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="sbase" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov" />
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
       <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
@@ -744,17 +1184,17 @@
       <item index="2" class="java.lang.String" itemvalue="Rake.test" />
       <item index="3" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="4" class="java.lang.String" itemvalue="IRB console.IRB console" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="6" class="java.lang.String" itemvalue="IRB console.Rails console: sbase" />
-      <item index="7" class="java.lang.String" itemvalue="Rake.db:rollback" />
+      <item index="5" class="java.lang.String" itemvalue="IRB console.Rails console: sbase" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:rollback" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.db:migrate" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: sbase" />
+        <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
         <item index="1" class="java.lang.String" itemvalue="Rake.db:migrate" />
-        <item index="2" class="java.lang.String" itemvalue="Rake.db:rollback" />
-        <item index="3" class="java.lang.String" itemvalue="Rake.db:migrate" />
-        <item index="4" class="java.lang.String" itemvalue="IRB console.IRB console" />
+        <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: sbase" />
+        <item index="3" class="java.lang.String" itemvalue="Rake.db:rollback" />
+        <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
       </list>
     </recent_temporary>
   </component>
@@ -795,24 +1235,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="55" y="97" width="1187" height="884" extended-state="0" />
-    <editor active="true" />
+    <frame x="107" y="73" width="1215" height="844" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32732317" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.38764784" sideWeight="0.9965783" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17197452" sideWeight="0.6735823" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30243024" sideWeight="0.6545454" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30450132" sideWeight="0.74244416" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3020654" sideWeight="0.6545454" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27304047" sideWeight="0.6090425" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943293" sideWeight="0.6545454" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918397" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25755584" sideWeight="0.9991174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.6545454" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32732317" sideWeight="0.97760355" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39095744" sideWeight="0.9993179" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32819074" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3375796" sideWeight="0.99904215" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263158" sideWeight="0.9937206" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -878,16 +1318,69 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130303001710_create_sensors.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="28" selection-start="133" selection-end="222" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sensors/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sensors_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="7" selection-start="683" selection-end="880" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sensor_imports_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/sensors/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="188" selection-end="894" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_shim.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/sensors.js.coffee">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="177" column="11" selection-start="2365" selection-end="2365" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="232" selection-end="235" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -901,91 +1394,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="8" column="9" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130317202749_create_measurements.rb">
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="56" selection-start="355" selection-end="355" vertical-scroll-proportion="0.25442177">
+        <state line="8" column="13" selection-start="241" selection-end="254" vertical-scroll-proportion="0.3148148">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/measurement.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="678" selection-end="678" vertical-scroll-proportion="0.6938776">
+        <state line="3" column="45" selection-start="89" selection-end="89" vertical-scroll-proportion="0.11805555">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130315220814_add_dirty_to_calibrations.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/static_pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="66" selection-start="67" selection-end="132" vertical-scroll-proportion="0.063079774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130317233718_add_folder_to_calibrations.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="82" selection-start="203" selection-end="203" vertical-scroll-proportion="0.13127413">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/sensor_import.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="98" selection-start="261" selection-end="261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/sensor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="52" selection-start="791" selection-end="791" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/calibration.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="57" selection-start="55" selection-end="512" vertical-scroll-proportion="0.4524715">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/calibration_import.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="36" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/sensors_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="36" selection-start="462" selection-end="472" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/calibrations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="63" selection-start="446" selection-end="446" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/calibration_imports_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="55" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log/development.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="4" column="109" selection-start="80" selection-end="80" vertical-scroll-proportion="0.16229117">
           <folding />
         </state>
       </provider>

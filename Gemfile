@@ -8,10 +8,12 @@ gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'roo'
 gem 'simple_form'
+gem 'mysql2'
+gem 'ransack'
+
 
 
 group :development, :test do
-  gem 'mysql2'
   gem 'rspec-rails', '2.11.0'
 end
 

@@ -9,6 +9,6 @@ FactoryGirl.define do
     category "LVD transducer"
     mcn "A999999"
     model "632-11E"
-    serial_no "2167"
+    serial "2167"
   end
 end

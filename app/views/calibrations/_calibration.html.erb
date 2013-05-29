@@ -1,0 +1,23 @@
+<tr>
+  <td>
+    <%if calibration.sensors.length == 0 %>
+        undefined
+    <%else%>
+        <%calibration.sensors.each do |x|%>
+            <%= link_to "#{x.control_number}", sensor_path(x) %>
+            <%unless x==calibration.sensors.last%>
+                <br>
+            <%end%>
+        <%end%>
+    <%end%>
+  </td>
+  <td><%= calibration.calibration_date %></td>
+  <td><%= calibration.expiration_date %></td>
+  <td style="text-align: center"><%= calibration.mode_to_string %></td>
+  <td style="text-align: center"><%= calibration.range%></td>
+  <td style="text-align: center"><%= calibration.measurement_unit%></td>
+  <td>
+    <%= link_to "edit", edit_calibration_path(calibration) %>    |
+    <%= link_to "delete", calibration, method: :delete, data: { confirm: "You sure?" } %>
+  </td>
+</tr>

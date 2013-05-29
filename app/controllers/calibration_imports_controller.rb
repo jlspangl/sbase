@@ -8,7 +8,7 @@ class CalibrationImportsController < ApplicationController
     if params[:calibration_import]
       @calibration_import = CalibrationImport.new(params[:calibration_import])
       if (calibration_id = @calibration_import.save)
-        logger.info("maggie: in create #{calibration_id}")
+        @calibration_import.upload
         redirect_to verify_calibrations_path(:id => calibration_id)
       else
         render :new

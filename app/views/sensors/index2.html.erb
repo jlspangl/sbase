@@ -1,0 +1,41 @@
+<% provide(:title, 'All sensors') %>
+<h2 style="color:black;font-weight: bold">Sensors</h2>
+
+
+<% if !@sensors || @sensors.length == 0 %>
+    <p class="text-center">'No sensors found.'</p>
+<% else %>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+
+          <%= link_to "Use form to add new senor", new_sensor_path, class: "btn btn-small btn-primary" %> <br> <br>
+          <%= link_to "Import sensors from excel file", new_sensor_import_path, class: "btn btn-small btn-primary" %>
+        </div>
+        <div class="span9">
+
+          <%# will_paginate %>
+          <table class="table table-bordered table-condensed table-striped">
+            <tr>
+              <th class="pretty"><%=sortable "mcn", "MCN" %></th>
+              <th class="pretty"><%=sortable "ecn", "ECN" %></th>
+              <th class="pretty"><%=sortable "name", "Name" %></th>
+              <th class="pretty"><%=sortable "category", "Sensor Type"%></th>
+              <th class="pretty"><%=sortable "model", "Model" %></th>
+              <th class="pretty"><%=sortable "serial", "Serial #" %></th>
+              <th>Links</th>
+            </tr>
+            <%= render @sensors %>
+          </table>
+          <%# will_paginate %>
+
+        </div>
+      </div>
+    </div>
+
+<% end %>
+
+
+
+

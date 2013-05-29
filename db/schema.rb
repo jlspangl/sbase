@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130317233718) do
+ActiveRecord::Schema.define(:version => 20130328192146) do
 
   create_table "calibrations", :force => true do |t|
     t.string   "orig_filename"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(:version => 20130317233718) do
     t.datetime "created_at",                        :null => false
     t.datetime "updated_at",                        :null => false
     t.string   "folder"
+    t.integer  "mode"
   end
 
   create_table "measurements", :force => true do |t|
@@ -44,14 +45,15 @@ ActiveRecord::Schema.define(:version => 20130317233718) do
     t.string   "ecn"
     t.string   "mcn"
     t.string   "model"
-    t.integer  "serial_no"
+    t.string   "serial"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "tag"
   end
 
   add_index "sensors", ["ecn"], :name => "index_sensors_on_ecn"
   add_index "sensors", ["mcn"], :name => "index_sensors_on_mcn"
-  add_index "sensors", ["serial_no"], :name => "index_sensors_on_serial_no"
+  add_index "sensors", ["serial"], :name => "index_sensors_on_serial_no"
 
   create_table "users", :force => true do |t|
     t.string   "email"

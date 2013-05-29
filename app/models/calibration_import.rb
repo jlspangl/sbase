@@ -14,6 +14,12 @@ class CalibrationImport
     false
   end
 
+  def upload
+    File.open(Rails.root.join('public', 'uploads', file.original_filename), 'wb') do |f|
+      f.write(file.read)
+    end
+  end
+
   def is_spreadsheet
     %w(.xls .xlsx).include? File.extname(file.original_filename)
   end
@@ -25,154 +31,45 @@ class CalibrationImport
     elsif load_imported_calibration
       @calibration.id
     else
-      calibration.errors.full_messages.each do |message|
-        errors.add :base, "Row #{index+2}: #{message}"
-      end
+      #calibration.errors.full_messages.each do |message|
+      #  errors.add :base, "Row #{index+2}: #{message}"
+      #end
       nil
     end
   end
 
   def load_imported_calibration
 
-    Rails.logger.info ("maggie: in load_imported_calibration")
+    #Rails.logger.info ("maggie: in load_imported_calibration")
     spreadsheet = open_spreadsheet
-    Rails.logger.info ("maggie: after open spreadsheet")
-
-    sensor_row = 0
-    sensor_col = 0
-    range_col = 0
-    std1_row = 0
-    std1_col = 0
-    std2_col = 0
-    std2_row = 0
-    cal_date_row = 0
-    cal_date_col = 0
-    exp_date_row = 0
-    exp_date_col = 0
-
-    #loop through  spreadsheet  cells
-    (spreadsheet.first_row..spreadsheet.last_row).each do |i|
-      (spreadsheet.first_column..spreadsheet.last_column).each do |j|
-
-        if spreadsheet.celltype(i, j) == :string
-          # cell containing "Xducer/Controller SN" label
-          if sensor_row == 0 && spreadsheet.cell(i, j).upcase.include?("SN")
-            sensor_row = i
-            sensor_col = j
-
-            # cell containing "Cal Range" label
-          elsif range_col == 0 && spreadsheet.cell(i, j).upcase.include?("RANGE")
-            range_col = j
-
-            # cell containing "STD-1" label
-          elsif std1_col == 0 && spreadsheet.cell(i, j).upcase.include?("STD")
-            std1_row = i
-            std1_col = j
-
-            # cell containing "STD-2"
-          elsif std1_col != 0 && std2_col == 0 && spreadsheet.cell(i, j).upcase.include?("STD")
-            std2_row = i
-            std2_col = j
-
-            # cell containing "Cal Date"
-          elsif cal_date_row == 0 && spreadsheet.cell(i, j).upcase.include?("DATE")
-            cal_date_row = i
-            cal_date_col = j
-
-            # cell containing "Next Cal Due"
-          elsif exp_date_row == 0 && spreadsheet.cell(i, j).upcase.include?("DUE")
-            exp_date_row = i
-            exp_date_col = j
-          end
-        end #if cell is string
-
-      end #end columns
-    end #end rows
-
-    Rails.logger.info ("maggie: after spreadsheet parse")
+    loc = Hash.new #locations in spreadsheet
+    parse_spreadsheet(spreadsheet, loc)
     @calibration = Calibration.new
-    @calibration.save!
-    Rails.logger.info ("maggie: after save! #{@calibration.id}")
+
+    @calibration.orig_filename = file.original_filename
+
+    set_range(spreadsheet, loc[:range_label][0], loc[:range_label][1]) if loc.key?(:range_label)
+
+    set_minmax(spreadsheet, loc[:std1_label][0], loc[:std1_label][1]) if loc.key?(:std1_label)
+
+    set_dates(spreadsheet, loc[:cal_date_label][0], loc[:cal_date_label][1],
+              loc[:exp_date_label][0], loc[:exp_date_label][1])
 
     #Get sensor associations
-    sensor_ids = []
-    (sensor_col+1...range_col).each do |j|
-      if spreadsheet.celltype(sensor_row, j) == :string
-        sensor_ids << spreadsheet.cell(sensor_row, j)
-      elsif spreadsheet.celltype(sensor_row, j) == :float
-        sensor_ids << spreadsheet.cell(sensor_row, j).to_i.to_s
-      end
-    end
-    sensor_ids.each do |id|
-      p = Sensor.first(:conditions => ['mcn = ? or ecn = ? or serial_no = ?', id, id, id])
-      @calibration.sensors << p if p
+    sensors = get_sensors(spreadsheet, loc)
+
+    if errors.any?
+      false
+    else
+      @calibration.save!
+      sensors.each { |p| @calibration.sensors << p }
+      true
     end
 
-    true
 
 =begin
-#Get range
-    range = 0
-    unit = "undefined"
-    (range_col+1..spreadsheet.last_column).each do |j|
-      if spreadsheet.celltype(sensor_row, j) == :string
-        str_value = spreadsheet.cell(sensor_row, j)
-        range = str_value.to_f
-        str_value = str_value.gsub(/[0-9\.\-\+\*]/, '')
-        if str_value
-          unit = case str_value.strip.upcase
-                   when "IN", "INCH" then
-                     "in"
-                   when "FT", "FspreadsheetT", "FEET" then
-                     "ft"
-                   when "CM", "CENTIMETER", "CENTIMETERS" then
-                     "cm"
-                   when "MM", "MILLIIMETER", "MILLIMETERS" then
-                     "mm"
-                   when "M", "METER", "METERS" then
-                     "m"
-                   when "M", "MICROMETRE", "MICROMETER", "MICROMETRES", "MICROMETERS", "UM" then
-                     "um"
-                   else
-                     "undefined"
-                 end
-        end
-        break
-      elsif spreadsheet.celltype(sensor_row, j) == :float
-        range = spreadsheet.cell(sensor_row, j)
-        units = "undefined"
-        break
-      end
-    end
-    puts "range = #{range}"
-    puts unit
-
 #get std min max
-    std = []
-    (std2_row+1..spreadsheet.last_row).each do |i|
-      if spreadsheet.celltype(i, std2_col) == :float
-        std << spreadsheet.cell(i, std2_col)
-      end
-    end
-    puts std.max
-    puts std.min
 
-    cal_date = nil
-    (cal_date_col+1...exp_date_col).each do |j|
-      if spreadsheet.celltype(cal_date_row, j) == :date
-        cal_date = spreadsheet.cell(cal_date_row, j)
-        break;
-      end
-    end
-    puts cal_date
-
-    exp_date = nil
-    (exp_date_col+1..spreadsheet.last_column).each do |j|
-      if spreadsheet.celltype(exp_date_row, j) == :date
-        exp_date = spreadsheet.cell(exp_date_row, j)
-        break;
-      end
-    end
 =end
   end
 
@@ -199,5 +96,150 @@ class CalibrationImport
         raise "Unknown file type: #{file.original_filename}"
     end
   end
+
+
+  def parse_spreadsheet(spreadsheet, cell_locations)
+    #loop through  spreadsheet  cells
+    (spreadsheet.first_row..spreadsheet.last_row).each do |i|
+      (spreadsheet.first_column..spreadsheet.last_column).each do |j|
+
+        if spreadsheet.celltype(i, j) == :string
+          # cell containing "Xducer/Controller SN" label
+          if !cell_locations.key?(:sensor_label) && spreadsheet.cell(i, j).upcase.include?("SN")
+            cell_locations[:sensor_label] = [i, j]
+
+            # cell containing "Cal Range" label
+          elsif !cell_locations.key?(:range_label) && spreadsheet.cell(i, j).upcase.include?("RANGE")
+            cell_locations[:range_label] = [i, j]
+
+            # cell containing "STD-1" label
+          elsif !cell_locations.key?(:std1_label) && spreadsheet.cell(i, j).upcase.include?("STD")
+            cell_locations[:std1_label] = [i, j]
+
+            # cell containing "STD-2"
+          elsif cell_locations.key?(:std1_label) && !cell_locations.key?(:std2_label) && spreadsheet.cell(i, j).upcase.include?("STD")
+            cell_locations[:std1_label] = [i, j]
+
+            # cell containing "Cal Date"
+          elsif !cell_locations.key?(:cal_date_label) && spreadsheet.cell(i, j).upcase.include?("DATE")
+            cell_locations[:cal_date_label] = [i, j]
+
+            # cell containing "Next Cal Due"
+          elsif !cell_locations.key?(:exp_date_label) && spreadsheet.cell(i, j).upcase.include?("DUE")
+            cell_locations[:exp_date_label] = [i, j]
+          end
+        end #if cell is string
+
+      end #end columns
+    end #end rows
+  end
+
+  #end  parse_spreadsheet
+
+  def get_sensors(spreadsheet, cell_locations)
+    sensors = []
+    if cell_locations.key?(:sensor_label)
+      (cell_locations[:sensor_label][1]+1...cell_locations[:range_label][1]).each do |j|
+        sensor_num = nil
+        if spreadsheet.celltype(cell_locations[:sensor_label][0], j) == :string
+          sensor_num = spreadsheet.cell(cell_locations[:sensor_label][0], j)
+        elsif spreadsheet.celltype(cell_locations[:sensor_label][0], j) == :float
+          sensor_num = spreadsheet.cell(cell_locations[:sensor_label][0], j).to_i.to_s
+        end
+        if sensor_num
+          p = Sensor.first(:conditions => ['mcn = ? or ecn = ? or serial = ?', sensor_num, sensor_num, sensor_num])
+          if p
+             sensors << p
+          else
+            errors.add :base, "The calibration was not uploaded because no sensor with control number #{sensor_num} was found in the database."
+          end
+        end
+      end
+      sensors
+    end
+  end
+
+  def set_range(spreadsheet, row, col)
+    @calibration.range = 0
+    @calibration.measurement_unit = "undefined"
+    (col+1..spreadsheet.last_column).each do |j|
+      if spreadsheet.celltype(row, j) == :float
+        @calibration.range = spreadsheet.cell(row, j)
+        break;
+      elsif spreadsheet.celltype(row, j) == :string
+        str = spreadsheet.cell(row, j)
+        @calibration.range = str.to_f
+        str = str.gsub(/[0-9\.\-\+\*]/, '')
+        @calibration.measurement_unit = unit_type(str) if str
+        break;
+      end
+    end
+  end
+
+  #set_range
+
+
+  def set_minmax(spreadsheet, row, col)
+    std = []
+    (row+1..spreadsheet.last_row).each do |i|
+      if spreadsheet.celltype(i, col) == :float
+        std << spreadsheet.cell(i, col)
+      end
+    end
+    @calibration.calibration_max = std.max
+    @calibration.calibration_min = std.min
+    @calibration.set_mode
+  end
+
+  #set_minmax
+
+  def unit_type(str)
+    case str.strip.upcase
+      when "IN", "INCH" then
+        "in"
+      when "FT", "FOOT", "FEET" then
+        "ft"
+      when "CM", "CENTIMETER", "CENTIMETERS" then
+        "cm"
+      when "MM", "MILLIIMETER", "MILLIMETERS" then
+        "mm"
+      when "M", "METER", "METERS" then
+        "m"
+      when "M", "MICROMETRE", "MICROMETER", "MICROMETRES", "MICROMETERS", "UM" then
+        "um"
+      else
+        "undefined"
+    end
+  end
+
+
+  #set date looks for calibration date and then assumes next date found is expiration date
+  #assumption: calibration and expiration dates are in same row and
+  #            calibration date precedes expiration date
+
+  def set_dates(spreadsheet, cal_date_row, cal_date_col, exp_date_row, exp_date_col)
+
+    k = 0
+    (cal_date_col+1...exp_date_col).each do |j|
+      if spreadsheet.celltype(cal_date_row, j) == :date
+        @calibration.calibration_date = spreadsheet.cell(cal_date_row, j)
+        k = j + 1
+        break
+      end
+    end
+
+    #look for expiration date
+    if (k != 0)
+
+      (k..spreadsheet.last_column).each do |j|
+        if spreadsheet.celltype(cal_date_row, j) == :date
+          @calibration.expiration_date = spreadsheet.cell(cal_date_row, j)
+          break
+        end
+      end
+    end
+
+  end #set_dates
+
 
 end

@@ -8,32 +8,52 @@
 #  ecn        :string(255)
 #  mcn        :string(255)
 #  model      :string(255)
-#  serial_no  :integer
+#  serial     :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
+#  tag        :string(255)
 #
 
 class Sensor < ActiveRecord::Base
 
-  CATEGORIES = ['LVD transducer',
+  CATEGORIES = ['LVDT',
+                'Test Stand',
                 'Clip gauge',
                 'Linear stage',
                 'Signal conditioning amplifier',
-                'Data acquisition interface' ,
-                'Digital caliper',
-                'Stage microscope']
+                'Data acquisition system' ,
+                'Caliper/Micrometer',
+                'Microscope stage']
 
-  attr_accessible :ecn, :mcn, :model, :serial_no, :name, :category
+  attr_accessible :ecn, :mcn, :model, :serial, :name, :category
 
   has_many :measurements
   has_many  :calibrations, :through => :measurements
 
-  validates :serial_no, :numericality => {:allow_blank => true}
   validates_uniqueness_of :ecn, :mcn,  :allow_blank => true
   validate :either_mcn_or_ecn_present?
   validates_inclusion_of :category, in: CATEGORIES,  :allow_blank => true
-
   validates_acceptance_of :confirmation, :on => :create
+
+  before_save :set_tag
+
+
+  def set_tag
+    self.tag = [mcn, ecn, serial].reject(&:blank?).join(" ")
+  end
+
+
+  def control_number
+    if !mcn.blank?
+      mcn
+    elsif !ecn.blank?
+      ecn
+    elsif !serial.blank?
+      serial.to_s
+    else
+      "undefined"
+    end
+  end
 
   #
   #def self.import(file)

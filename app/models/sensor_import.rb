@@ -42,6 +42,15 @@ class SensorImport
       row = Hash[[header, spreadsheet.row(i)].transpose]
       sensor = Sensor.find_by_id(row["id"]) || Sensor.new
       sensor.attributes = row.to_hash.slice(*Sensor.accessible_attributes)
+      #correct ecn or serial if needed
+      if sensor.ecn.to_f != 0
+        x = sensor.ecn
+        sensor.ecn = x.to_f.to_i.to_s
+      end
+      if sensor.serial.to_f != 0
+        x = sensor.serial
+        sensor.serial = x.to_f.to_i.to_s
+      end
       sensor
     end
   end

@@ -1,0 +1,42 @@
+<% provide(:title, 'New sensor') %>
+
+
+
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span3">
+
+
+    </div>
+    <div class="span6">
+
+      <h2>Show sensor</h2>
+
+      <%= link_to "Return to Calibrations", request.env["HTTP_REFERER"] %>
+      <br> <br>
+      <table class="table table-bordered table-condensed">
+        <tr>
+          <td>Name</td>
+          <td><%= @sensor.name %></td>
+        </tr>
+        <tr>
+          <td>ECN / MCN / Serial Number</td>
+
+          <td><%= sensor_label(@sensor) %></td>
+        </tr>
+        <tr>
+          <td>Sensor Type</td>
+          <td><%= @sensor.category %></td>
+        </tr>
+        <tr>
+          <td>Model</td>
+          <td><%= @sensor.model %></td>
+        </tr>
+      </table>
+
+    <div class="span3">
+      <!--blank-->
+    </div>
+  </div>
+</div>
+

@@ -1,25 +1,62 @@
 <% provide(:title, 'All sensors') %>
-<h1>All sensors</h1>
 
-<% if !@sensors || @sensors.length == 0 %>
-    <p>'No sensors found.'</p>
-<% else %>
-    <%= will_paginate %>
-    <table class="table table-bordered table-condensed">
-       <tr>
-         <th>MCN / ECN</th>
-         <th>Sensor Name</th>
-         <th>Sensor Type</th>
-         <th>Model</th>
-         <th>Serial Number</th>
-         <th>Links</th>
-       </tr>
-       <%= render @sensors %>
-    </table>
-    <%= will_paginate %>
-<% end %>
+<h2 style="color:black;font-weight: bold">Sensors</h2>
 
-<%= link_to "Use form to add new senor", new_sensor_path, class: "btn btn-small btn-primary" %> <br> <br>
-<%= link_to "Import sensors from excel file", new_sensor_import_path, class: "btn btn-small btn-primary" %> <br> <br>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span2">
+
+          <div style="background-color: #FFF8C6;">
+          <br>
+          <%= search_form_for @search, :url => sensors_path, :html => {:method => :get} do |f| %>
+
+              <%= f.label :name_cont, 'Sensor name contains' %>
+              <%= f.text_field :name_cont%>
+
+              <%= f.label :mcn_or_ecn_or_serial_cont, 'ECN or MCN or Serial Number Contains' %>
+              <%= f.text_field :mcn_or_ecn_or_serial_cont%>
+
+              <%= f.label :category_eq, 'Sensor type is' %>
+              <%= f.select :category_eq, Sensor::CATEGORIES, :include_blank => true%>
+
+              <%= f.submit "Search"  %>
+          <% end %>
+          </div>
+
+          <%= link_to "Add new sensor", new_sensor_path, class: "btn btn-primary" %>
+          <br> <br>
+          <%= link_to "Import sensors", new_sensor_import_path, class: "btn btn-primary" %>
+
+        </div>
+        <div class="span10">
+          <% if !@sensors || @sensors.length == 0 %>
+              <p class="text-center">No sensors found.</p>
+          <% else %>
+          <%= will_paginate @sensors %>
+
+          <table class="table table-bordered table-condensed table-striped">
+            <tr>
+              <th><%= sort_link @search, :mcn, "MCN" %></th>
+              <th><%= sort_link @search, :ecn ,"ECN" %></th>
+              <th><%= sort_link @search, :name,"Name" %></th>
+              <th><%= sort_link @search, :category, "Sensor Type" %></th>
+              <th><%= sort_link @search, :model, "Model" %></th>
+              <th><%= sort_link @search, :serial, "Serial #" %></th>
+              <th>Links</th>
+            </tr>
+            <%= render @sensors %>
+          </table>
+
+          <% end %>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
 
 

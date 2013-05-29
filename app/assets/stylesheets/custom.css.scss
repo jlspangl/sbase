@@ -1,3 +1,5 @@
+$baseFontSize: 13px;
+$baseLineHeight: 15px;
 @import "bootstrap";
 
 /* mixins, variables, etc. */
@@ -49,7 +51,6 @@ h1 {
 }
 
 h2 {
-  font-size: 1.7em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
@@ -105,6 +106,7 @@ footer {
       margin-left: 10px;
     }
   }
+
 }
 
 .debug_dump {
@@ -272,13 +274,34 @@ aside {
 /* dates on calibration form */
 #calibration_calibration_date_1i,#calibration_expiration_date_1i{
   float:left;
-  width: 100px;
+  width: 75px;
   margin-right: 5px;
 
 }
 #calibration_calibration_date_2i,#calibration_expiration_date_2i{
-  width: 100px;
+  width: 75px;
 }
 #calibration_calibration_date_3i,#calibration_expiration_date_3i{
   width: 75px;
 }
+
+.help-block {
+  margin-left: 20px;
+  display: inline;
+  font-size: 90%;
+}
+
+/* dates on calibration search f0rm */
+#q_calibration_date_lteq_1i{
+  float:left;
+  width: 75px;
+  margin-right: 5px;
+
+}
+#q_calibration_date_lteq_2i{
+  width: 60px;
+}
+#q_calibration_date_lteq_3i{
+  width: 60px;
+}
+

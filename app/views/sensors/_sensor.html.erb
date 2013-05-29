@@ -1,11 +1,17 @@
 <tr>
-  <td><%= control_number(sensor) %></td>
+  <td><%= sensor.mcn %></td>
+  <td><%= sensor.ecn %></td>
   <td><%= sensor.name %></td>
   <td><%= sensor.category %></td>
   <td><%= sensor.model %></td>
-  <td><%= sensor.serial_no %></td>
+  <td><%= sensor.serial %></td>
   <td>
     <%= link_to "edit", edit_sensor_path(sensor) %>    |
-    <%= link_to "delete", sensor, method: :delete, data: { confirm: "You sure?" } %>
+    <%= link_to "delete", sensor, method: :delete, data: {confirm: "You sure?"} %> |
+    <%= link_to "calibrations", '#' %>
+    <% if sensor.category == 'Test Stand' %>
+        |
+        <%= link_to "folders", '#' %>
+    <% end %>
   </td>
 </tr>

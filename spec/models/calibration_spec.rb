@@ -13,6 +13,7 @@
 #  created_at       :datetime         not null
 #  updated_at       :datetime         not null
 #  folder           :string(255)
+#  mode             :integer
 #
 
 require 'spec_helper'

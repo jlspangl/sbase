@@ -1,5 +1,5 @@
 class CalibrationsController < ApplicationController
-
+  respond_to :html, :csv
   #def new
   #   @calibration = Calibration.new
   #end
@@ -18,7 +18,22 @@ class CalibrationsController < ApplicationController
 
   def verify
     @calibration = Calibration.find(params[:id])
-    @sensors = params[:sensor_ids].map { |id| Sensor.find(id)}
+  end
+
+
+  def index
+
+    #fix search parameters so that query is for
+    #gteq calibration date and lteq expiration date
+    if (params[:q])
+       params[:q]["expiration_date_gteq(1i)"] = params[:q]["calibration_date_lteq(1i)"]
+       params[:q]["expiration_date_gteq(2i)"] = params[:q]["calibration_date_lteq(2i)"]
+       params[:q]["expiration_date_gteq(3i)"] = params[:q]["calibration_date_lteq(3i)"]
+    end
+
+    @search = Calibration.search(params[:q])
+    @calibrations = @search.result(:distinct => true)
+    @calibrations = @calibrations.paginate(:page => params[:page], :per_page => 5)
   end
 
   def edit
@@ -27,8 +42,8 @@ class CalibrationsController < ApplicationController
 
 
   def update
+    @calibration = Calibration.find(params[:id])
     if params["commit"] .eql?("Cancel")
-      calibration = Calibration.find(params[:id])
       #delete excel file
       calibration.destroy()
     elsif @calibration.update_attributes(params[:calibration])

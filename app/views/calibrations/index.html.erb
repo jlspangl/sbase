@@ -1,0 +1,51 @@
+<% provide(:title, 'List Calibrations') %>
+<h2 style="color:black;font-weight: bold">Calibrations</h2>
+
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+
+
+          <div style="background-color: #FFF8C6;">
+            <br>
+            <%= search_form_for @search, :url => calibrations_path, :html => {:method => :get} do |f| %>
+
+                <%= f.label :measurements_sensor_mcn_cont, 'ECN or MCN or Serial Number' %>
+                <%= f.text_field :measurements_sensor_tag_cont%>
+
+                <%= f.label :calibration_date_lteq, 'Date' %>
+                <%= f.date_select :calibration_date_lteq, :include_blank => true,
+                                   :use_short_month => true, :start_year => 1990, :end_year => 2020%>
+
+                <%= f.submit "Search"  %>
+            <% end %>
+          </div>
+
+
+          <%= link_to "Add new calibration",new_calibration_import_path, class: "btn btn-primary" %>
+        </div>
+        <div class="span9">
+
+          <% if !@calibrations || @calibrations.length == 0 %>
+              <p class="text-center">No calibrations found.</p>
+          <% else %>
+          <%= will_paginate %>
+          <table class="table table-bordered table-condensed">
+            <tr>
+              <th style="width: 15%">Sensor</th>
+              <th><%=sort_link @search, :calibration_date, "Calibration Date"%></th>
+              <th><%=sort_link @search, :expiration_date, "Expiration Date"%></th>
+              <th><%=sort_link @search, :mode, "Mode"%></th>
+              <th><%=sort_link @search, :range, "Range"%></th>
+              <th><%=sort_link @search, :measurement_unit, "Unit"%></th>
+              <th >Links</th>
+            </tr>
+            <%= render @calibrations %>
+          </table>
+          <%= will_paginate %>
+        </div>
+      </div>
+    </div>
+
+<% end %>
