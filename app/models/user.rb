@@ -2,37 +2,47 @@
 #
 # Table name: users
 #
-#  id              :integer          not null, primary key
-#  email           :string(255)
-#  created_at      :datetime         not null
-#  updated_at      :datetime         not null
-#  password_digest :string(255)
-#  remember_token  :string(255)
-#  admin           :boolean          default(FALSE)
+#  id                     :integer          not null, primary key
+#  email                  :string(255)      default(""), not null
+#  encrypted_password     :string(255)      default(""), not null
+#  reset_password_token   :string(255)
+#  reset_password_sent_at :datetime
+#  remember_created_at    :datetime
+#  sign_in_count          :integer          default(0)
+#  current_sign_in_at     :datetime
+#  last_sign_in_at        :datetime
+#  current_sign_in_ip     :string(255)
+#  last_sign_in_ip        :string(255)
+#  created_at             :datetime         not null
+#  updated_at             :datetime         not null
 #
 
 class User < ActiveRecord::Base
-  attr_accessible :email, :password, :password_confirmation
-  has_secure_password
+  rolify
+  # Include default devise modules. Others available are:
+  # :token_authenticatable, :confirmable,
+  # :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
 
-  before_save { |user| user.email = email.downcase }
-  before_save :create_remember_token
+  # Setup accessible (or protected) attributes for your model
+  attr_accessible :email, :password, :password_confirmation, :remember_me
 
-  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  validates :email, presence:   true,
-            format:     { with: VALID_EMAIL_REGEX },
-            uniqueness: { case_sensitive: false }
-  validates :password, presence: true, length: { minimum: 6, maximum: 20 }
-  validates :password_confirmation, presence: true
+
+  #validates_uniqueness_of  :email, :case_sensitive => false
+  #validates_uniqueness_of  :username, :case_sensitive => true
+  #validates_length_of :username, :within => 8..20
+
+  #VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  #validates :email, presence:   true,
+  #          format:     { with: VALID_EMAIL_REGEX },
+  #          uniqueness: { case_sensitive: false }
+  #validates :password, presence: true, length: { minimum: 6, maximum: 20 }
+  #validates :password_confirmation, presence: true
 
 
   def login_name
     email.split('@')[0]
   end
 
-  private
-
-  def create_remember_token
-    self.remember_token = SecureRandom.urlsafe_base64
-  end
 end

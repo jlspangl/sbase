@@ -11,20 +11,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130328192146) do
+ActiveRecord::Schema.define(:version => 20130529223936) do
 
   create_table "calibrations", :force => true do |t|
     t.string   "orig_filename"
     t.string   "measurement_unit"
-    t.date     "calibration_date"
-    t.date     "expiration_date"
+    t.date     "caldate"
+    t.date     "expdate"
     t.float    "calibration_max",  :default => 0.0
     t.float    "calibration_min",  :default => 0.0
     t.float    "range",            :default => 0.0
-    t.datetime "created_at",                        :null => false
-    t.datetime "updated_at",                        :null => false
+    t.boolean  "dirty",            :default => true
     t.string   "folder"
+    t.string   "string"
     t.integer  "mode"
+    t.integer  "integer"
+    t.datetime "created_at",                         :null => false
+    t.datetime "updated_at",                         :null => false
   end
 
   create_table "measurements", :force => true do |t|
@@ -46,25 +49,31 @@ ActiveRecord::Schema.define(:version => 20130328192146) do
     t.string   "mcn"
     t.string   "model"
     t.string   "serial"
+    t.string   "tag"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "tag"
   end
 
   add_index "sensors", ["ecn"], :name => "index_sensors_on_ecn"
   add_index "sensors", ["mcn"], :name => "index_sensors_on_mcn"
-  add_index "sensors", ["serial"], :name => "index_sensors_on_serial_no"
+  add_index "sensors", ["serial"], :name => "index_sensors_on_serial"
 
   create_table "users", :force => true do |t|
-    t.string   "email"
-    t.datetime "created_at",                         :null => false
-    t.datetime "updated_at",                         :null => false
-    t.string   "password_digest"
-    t.string   "remember_token"
-    t.boolean  "admin",           :default => false
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
-  add_index "users", ["remember_token"], :name => "index_users_on_remember_token"
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end

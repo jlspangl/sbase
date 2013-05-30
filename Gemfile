@@ -10,8 +10,10 @@ gem 'roo'
 gem 'simple_form'
 gem 'mysql2'
 gem 'ransack'
-
-
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
+gem "figaro", ">= 0.5.0"
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'

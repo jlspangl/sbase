@@ -1,5 +1,7 @@
 Sbase::Application.routes.draw do
 
+  devise_for :users
+
   resources :sensors  do
     collection {post :import}
   end
@@ -27,7 +29,7 @@ Sbase::Application.routes.draw do
   # POST	   /sessions	     create	     create a new session
   # DELETE	 /sessions/1	   destroy	   delete session with id 1
 
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :x_sessions, only: [:new, :create, :destroy]
 
   #Home	      /	         root_path
   #About	    /about	   about_path
