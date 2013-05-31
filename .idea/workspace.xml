@@ -2,45 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae58a27-0be2-481a-be29-e6dbd7808f3f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/passwords/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130227003641_create_users.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130228230153_add_index_to_users_email.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130228231109_add_password_digest_to_users.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130301200819__add_remembertoken_and_admin_to_users.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130303204639_add_indexes_to_sensors.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130311144718_fix_column_name.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130315220814_add_dirty_to_calibrations.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130317233718_add_folder_to_calibrations.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130320221200_add_mode_to_calibrations.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130325194219_change_serial_no.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130328192146_add_tag_to_sensors.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\sbase\db\migrate\20130328231214_rename_calibration_attributes.rb" afterPath="" />
-      <change type="MOVED" beforePath="C:\sbase\app\controllers\sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/x_sessions_controller.rb" />
-      <change type="MOVED" beforePath="C:\sbase\app\helpers\sessions_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/x_sessions_helper.rb" />
-      <change type="MOVED" beforePath="C:\sbase\app\views\sessions\new.html.erb" afterPath="$PROJECT_DIR$/app/views/x_sessions/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.generators" afterPath="$PROJECT_DIR$/.idea/.generators" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130303001710_create_sensors.rb" afterPath="$PROJECT_DIR$/db/migrate/20130303001710_create_sensors.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130311183358_create_calibrations.rb" afterPath="$PROJECT_DIR$/db/migrate/20130311183358_create_calibrations.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/calibration.rb" afterPath="$PROJECT_DIR$/app/models/calibration.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/calibration_spec.rb" afterPath="$PROJECT_DIR$/spec/models/calibration_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sbase.iml" afterPath="$PROJECT_DIR$/.idea/sbase.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/models/user_spec.rb" afterPath="$PROJECT_DIR$/spec/models/user_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sbase.iws" />
@@ -61,7 +25,7 @@
     <file path="/a.dummy" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1363735670253" ignored="false" />
     <file path="/test.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362073112297" ignored="false" />
     <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/OLTARIS_2012/config/environments/test.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362073114536" ignored="false" />
-    <file path="/Gemfile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369935965230" ignored="false" />
+    <file path="/Gemfile" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1370035095200" ignored="false" />
     <file path="/*.regexp" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369940145646" ignored="false" />
     <file path="/utilities.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362085304006" ignored="false" />
     <file path="/user_pages_spec.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1362159966289" ignored="false" />
@@ -485,6 +449,9 @@
     <file path="/20130529223936_devise_create_users.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369931556306" ignored="false" />
     <file path="/ability.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369935106457" ignored="false" />
     <file path="/temp.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1369935651819" ignored="false" />
+    <file path="$PROJECT_DIR$/log/development.log" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1370035188816" ignored="false" />
+    <file path="/deploy.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1370035463632" ignored="false" />
+    <file path="$USER_HOME$/Documents/Aptana RadRails Workspace/OLTARIS_2012/config/deploy.rb" changelist="fae58a27-0be2-481a-be29-e6dbd7808f3f" time="1370035405037" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -510,15 +477,6 @@
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="46" column="0" selection-start="1668" selection-end="1668" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -555,20 +513,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/devise/sessions/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="33" selection-start="51" selection-end="122" vertical-scroll-proportion="-3.2692308">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="59" selection-start="831" selection-end="831" vertical-scroll-proportion="-9.153846">
-              <folding />
+              <folding>
+                <marker date="1369946763157" expanded="true" signature="559:801" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -591,13 +542,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="88" selection-start="773" selection-end="773" vertical-scroll-proportion="0.63109046">
+            <state line="20" column="62" selection-start="830" selection-end="830" vertical-scroll-proportion="-13.076923">
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="20" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deploy.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="31" selection-start="633" selection-end="633" vertical-scroll-proportion="0.3445946">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -628,14 +597,12 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/migrate/20130303001710_create_sensors.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130311183358_create_calibrations.rb" />
         <option value="C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/activerecord-3.2.12/lib/active_record/connection_adapters/abstract/schema_statements.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130529223936_devise_create_users.rb" />
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/x_sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/views/devise/sessions/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/new.html.erb" />
@@ -644,6 +611,8 @@
         <option value="$PROJECT_DIR$/config/environments/development.rb" />
         <option value="$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/config/deploy.rb" />
       </list>
     </option>
   </component>
@@ -655,8 +624,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="86" />
-    <option name="y" value="3" />
+    <option name="x" value="1325" />
+    <option name="y" value="127" />
     <option name="width" value="1215" />
     <option name="height" value="838" />
   </component>
@@ -1464,10 +1433,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="3" width="1215" height="838" extended-state="0" />
+    <frame x="1325" y="127" width="1215" height="838" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32258064" sideWeight="0.9937206" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32258064" sideWeight="0.9937206" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32628798" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33467743" sideWeight="0.99904215" order="1" side_tool="false" content_ui="tabs" />
@@ -1477,7 +1446,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874355" sideWeight="0.6545454" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32732317" sideWeight="0.97760355" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32258064" sideWeight="0.9993179" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32258064" sideWeight="0.9993179" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1547,20 +1516,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/users_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1643,7 +1598,9 @@
     <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="59" selection-start="831" selection-end="831" vertical-scroll-proportion="-9.153846">
-          <folding />
+          <folding>
+            <marker date="1369946763157" expanded="true" signature="559:801" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1658,10 +1615,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/devise/passwords/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="88" selection-start="773" selection-end="773" vertical-scroll-proportion="0.63109046">
+        <state line="20" column="62" selection-start="830" selection-end="830" vertical-scroll-proportion="-13.076923">
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="20" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/deploy.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="31" selection-start="633" selection-end="633" vertical-scroll-proportion="0.3445946">
+          <folding />
         </state>
       </provider>
     </entry>
