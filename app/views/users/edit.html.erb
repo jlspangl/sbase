@@ -1,0 +1,31 @@
+<% provide(:title, "Edit User (admin only)") %>
+
+<div class="row" style="margin-top:5px;margin-bottom:10px">
+
+  <div class="span5 offset2">
+
+
+      <%= simple_form_for(@user, :html => {:class => 'form-horizontal'}) do |f| %>
+
+
+            <%= f.simple_fields_for :user_profile do |builder| %>
+                <%= builder.input :firstname, :label=>"First name" %>
+                <%= builder.input :lastname, :label=>"Last name" %>
+                <%= builder.input :affiliation, :label=>"Business or Organization" %>
+                <%= builder.input :org_address_line1, :label=>"Address (line 1)" %>
+                <%= builder.input :org_address_line2, :label=>"Address (line 2)" %>
+                <%= builder.input :org_address_city, :label=>"City" %>
+                <%= builder.input :org_address_state, :label=>"State" %>
+                <%= builder.input :org_address_zip, :label=>"Zip" %>
+                <%= builder.input :citizenship_type, as: :radio_buttons, :label=>"US Person?" %>
+                <%= builder.input :purpose_of_use, :as => :text, :input_html => { :rows => 5 }, :label=>"Purpose of Use" %>
+                <%= builder.input :government_contract_id, :label=>"Government Contract Id" %>
+            <% end %>
+            <%= f.input :email, :required => true %>
+            <%= f.input :username, :required => true %>
+            <%= f.button :submit, 'Update', :class => 'btn-primary pull-right' %>
+
+        <% end %>
+
+    </div>
+</div>

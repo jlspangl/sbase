@@ -18,12 +18,13 @@ class Sensor < ActiveRecord::Base
 
   CATEGORIES = ['LVDT',
                 'Test Stand',
-                'Clip gauge',
+                'Clip gauge / Extensometer',
                 'Linear stage',
                 'Signal conditioning amplifier',
                 'Data acquisition system' ,
                 'Caliper/Micrometer',
-                'Microscope stage']
+                'Microscope stage',
+                'Other']
 
   attr_accessible :ecn, :mcn, :model, :serial, :name, :category
 

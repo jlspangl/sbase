@@ -2,7 +2,6 @@
 
 <h2 style="color:black;font-weight: bold">Sensors</h2>
 
-
     <div class="container-fluid">
       <div class="row-fluid">
         <div class="span2">
@@ -31,7 +30,7 @@
         </div>
         <div class="span10">
           <% if !@sensors || @sensors.length == 0 %>
-              <p class="text-center">No sensors found.</p>
+              <p class="text-center">No sensors matched the search terms.</p>
           <% else %>
           <%= will_paginate @sensors %>
 

@@ -5,7 +5,7 @@
     <%= simple_form_for(@calibration, :html => {:class => 'form-horizontal'}) do |f| %>
         <%= display_base_errors @calibration %>
         <%= f.input :cal_date, :label => 'Calibration date'%>
-        <%= f.input :expiration_date, :label => 'Expiration date'%>
+        <%= f.input :expdate, :label => 'Expiration date'%>
         <%= f.input :range_max, :label => 'Range maximum'%>
         <%= f.input :range_min, :label => 'Range minimum'%>
         <%= f.button :submit, :label => 'Confirm import of calibration', :class => "btn btn-primary" %>

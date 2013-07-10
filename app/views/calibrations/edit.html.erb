@@ -35,9 +35,9 @@
 
         <%= f.input :orig_filename, :label => 'Name of excel file', :readonly => true, :input_html => {:style => 'width:300px;'} %>
 
-        <%= f.input :calibration_date, :use_short_month => true, :label => 'Calibration date', :prompt => {:day => 'day', :month => 'month', :year => 'year'} %>
+        <%= f.input :caldate, :use_short_month => true, :label => 'Calibration date', :prompt => {:day => 'day', :month => 'month', :year => 'year'} %>
 
-        <%= f.input :expiration_date,  :use_short_month => true, :label => 'Expiration date', :prompt => {:day => 'day', :month => 'month', :year => 'year'}  %>
+        <%= f.input :expdate,  :use_short_month => true, :label => 'Expiration date', :prompt => {:day => 'day', :month => 'month', :year => 'year'}  %>
 
         <%= f.input :range, :label => 'Range', hint: get_range_hint(@calibration), :input_html => {:style => 'width: 150px'} %>
 

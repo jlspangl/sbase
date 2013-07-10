@@ -20,7 +20,7 @@
 #
 
 class Calibration < ActiveRecord::Base
-   attr_accessible :orig_filename, :calibration_date,  :measurement_unit, :expiration_date,
+   attr_accessible :orig_filename, :caldate,  :measurement_unit, :expdate,
                    :calibration_max, :calibration_min, :range
    has_many :measurements
    has_many  :sensors, :through => :measurements

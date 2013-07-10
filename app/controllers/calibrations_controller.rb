@@ -26,9 +26,9 @@ class CalibrationsController < ApplicationController
     #fix search parameters so that query is for
     #gteq calibration date and lteq expiration date
     if (params[:q])
-       params[:q]["expiration_date_gteq(1i)"] = params[:q]["calibration_date_lteq(1i)"]
-       params[:q]["expiration_date_gteq(2i)"] = params[:q]["calibration_date_lteq(2i)"]
-       params[:q]["expiration_date_gteq(3i)"] = params[:q]["calibration_date_lteq(3i)"]
+       params[:q]["expdate_gteq(1i)"] = params[:q]["caldate_lteq(1i)"]
+       params[:q]["expdate_gteq(2i)"] = params[:q]["calidate_lteq(2i)"]
+       params[:q]["expdate_gteq(3i)"] = params[:q]["caldate_lteq(3i)"]
     end
 
     @search = Calibration.search(params[:q])

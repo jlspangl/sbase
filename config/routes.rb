@@ -29,19 +29,10 @@ Sbase::Application.routes.draw do
   # POST	   /sessions	     create	     create a new session
   # DELETE	 /sessions/1	   destroy	   delete session with id 1
 
-  resources :x_sessions, only: [:new, :create, :destroy]
-
-  #Home	      /	         root_path
-  #About	    /about	   about_path
-  #Help	      /help	     help_path
-  #Contact	 /contact	   contact_path
-  #Sign in	 /signin	   signin_path
-
-
-
-  match '/signup',  to: 'users#new'
-  match '/signin',  to: 'sessions#new'
-  match '/signout', to: 'sessions#destroy', via: :delete
+  #
+  #match '/signup',  to: 'users#new'
+  #match '/signin',  to: 'sessions#new'
+  #match '/signout', to: 'sessions#destroy', via: :delete
 
   root to: 'static_pages#home'
   match '/help',    to: 'static_pages#help'

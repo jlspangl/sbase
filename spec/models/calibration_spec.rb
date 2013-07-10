@@ -30,7 +30,7 @@ describe Calibration do
   subject { @calibration }
 
   it { should respond_to(:filename) }
-  it { should respond_to(:expiration_date) }
+  it { should respond_to(:expdate) }
   it { should respond_to(:cal_date) }
   it { should respond_to(:range_max) }
   it { should respond_to(:range_min) }

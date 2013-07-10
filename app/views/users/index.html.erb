@@ -1,0 +1,22 @@
+<% provide(:title, 'Manage users') %>
+
+<h1>Users</h1>
+
+<% if !@users || @users.length == 0 %>
+    <p class="text-center">No users found.</p>
+<% else %>
+    <%= will_paginate @users %>
+    <div id="users">
+      <table class="table table-bordered table-condensed">
+        <tr>
+          <th><%= sort_link @search, :email,      'Email'%></th>
+          <th><%= sort_link @search, :current_sign_in_at, 'Curr. Sign In' %></th>
+          <th><%= sort_link @search, :last_sign_in_at,    'Last Sign In'%></th>
+          <th>Links</th>
+        </tr>
+        <%= render @users %>
+      </table>
+
+    </div>
+<% end %>
+

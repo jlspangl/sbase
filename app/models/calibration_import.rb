@@ -222,7 +222,7 @@ class CalibrationImport
     k = 0
     (cal_date_col+1...exp_date_col).each do |j|
       if spreadsheet.celltype(cal_date_row, j) == :date
-        @calibration.calibration_date = spreadsheet.cell(cal_date_row, j)
+        @calibration.caldate = spreadsheet.cell(cal_date_row, j)
         k = j + 1
         break
       end
@@ -233,7 +233,7 @@ class CalibrationImport
 
       (k..spreadsheet.last_column).each do |j|
         if spreadsheet.celltype(cal_date_row, j) == :date
-          @calibration.expiration_date = spreadsheet.cell(cal_date_row, j)
+          @calibration.expdate = spreadsheet.cell(cal_date_row, j)
           break
         end
       end

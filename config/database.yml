@@ -15,7 +15,7 @@ development:
   database:  sbase_development
   pool: 5
   username: root
-  password: nasa2009
+  password: nasa2013
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -28,7 +28,7 @@ test:
   database: sbase_test
   pool: 5
   username: root
-  password: nasa2009
+  password: nasa2013
   host: localhost
 
 #production:
