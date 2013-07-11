@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3262780203">
-    <data-source source="LOCAL" name="Rails sbase: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="a4850c13-4c44-42fd-942d-ba1fcda0b685">
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://127.0.0.1/sbase_production</jdbc-url>
-      <user-name>root</user-name>
-      <libraries />
-    </data-source>
+  <component name="DataSourceManagerImpl" format="xml" hash="3373436396">
     <data-source source="LOCAL" name="Rails sbase: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="0e82a978-cbac-49cd-b18c-a8573261dc75">
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
       <jdbc-url>jdbc:mysql://127.0.0.1/sbase_test</jdbc-url>

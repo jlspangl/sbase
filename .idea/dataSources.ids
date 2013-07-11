@@ -1,1 +1,25 @@
-<?xml version='1.0' encoding='UTF-8' ?><component name="dataSourceStorage"><data-source source="LOCAL" name="Rails sbase: production" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="a4850c13-4c44-42fd-942d-ba1fcda0b685"><jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver><jdbc-url>jdbc:mysql://127.0.0.1/sbase_production</jdbc-url><user-name>root</user-name><libraries /></data-source><data-source source="LOCAL" name="Rails sbase: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="0e82a978-cbac-49cd-b18c-a8573261dc75"><jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver><jdbc-url>jdbc:mysql://127.0.0.1/sbase_test</jdbc-url><user-name>root</user-name><libraries><library><url>file://</url></library></libraries></data-source><data-source source="LOCAL" name="Rails sbase: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="61b0d7ee-d6d7-4cd9-b4bf-7c5a06d39485"><jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver><jdbc-url>jdbc:mysql://127.0.0.1/sbase_test</jdbc-url><user-name>root</user-name><user-password>dfc4dfcbdfd9dfcbdf98df9adf9adf93</user-password><libraries><library><url>file://</url></library></libraries></data-source></component>
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails sbase: test" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="0e82a978-cbac-49cd-b18c-a8573261dc75">
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://127.0.0.1/sbase_test</jdbc-url>
+    <user-name>root</user-name>
+    <user-password>dfc4dfcbdfd9dfcbdf98df9adf9bdf99</user-password>
+    <libraries>
+      <library>
+        <url>file://</url>
+      </library>
+    </libraries>
+  </data-source>
+  <data-source source="LOCAL" name="Rails sbase: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="61b0d7ee-d6d7-4cd9-b4bf-7c5a06d39485">
+    <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+    <jdbc-url>jdbc:mysql://127.0.0.1/sbase_development</jdbc-url>
+    <user-name>root</user-name>
+    <user-password>dfc4dfcbdfd9dfcbdf98df9adf9bdf99</user-password>
+    <libraries>
+      <library>
+        <url>file://</url>
+      </library>
+    </libraries>
+  </data-source>
+</component>

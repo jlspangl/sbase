@@ -31,12 +31,13 @@ test:
   password: nasa2013
   host: localhost
 
-#production:
-#  adapter: mysql2
-#  encoding: utf8
-#  reconnect: false
-#  database: sbase_production
-#  pool: 5
-#  username: root
-#  password:
-#  host: localhost
+production:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: sbase_production
+  pool: 5
+  host: localhost
+  username: root
+  password: sbase123
+  socket: /var/lib/mysql/mysql.sock
