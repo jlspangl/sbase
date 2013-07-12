@@ -4,7 +4,6 @@ gem 'rails', '3.2.12'
 gem 'capistrano'
 gem 'bootstrap-sass', '2.1'
 gem 'bcrypt-ruby', '3.0.1'
-gem 'faker', '1.0.1'         #  allow us to make sample entries in database
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
 gem 'roo'
@@ -21,6 +20,7 @@ group :development, :test do
 end
 
 group :development do
+  #gem 'faker', '1.0.1'         #  allow us to make sample entries in database
   gem 'annotate', '2.5.0'
 end
 
