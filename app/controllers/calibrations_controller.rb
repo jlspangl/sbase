@@ -33,7 +33,7 @@ class CalibrationsController < ApplicationController
 
     @search = Calibration.search(params[:q])
     @calibrations = @search.result(:distinct => true)
-    @calibrations = @calibrations.paginate(:page => params[:page], :per_page => 5)
+    @calibrations = @calibrations.paginate(:page => params[:page], :per_page => 15)
   end
 
   def edit
