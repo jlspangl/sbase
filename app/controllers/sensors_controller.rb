@@ -5,7 +5,7 @@ class SensorsController < ApplicationController
   def index
     @search = Sensor.search(params[:q])
     @sensors = @search.result(:distinct => true)
-    @sensors = @sensors.paginate(:page => params[:page], :per_page => 5)
+    @sensors = @sensors.paginate(:page => params[:page],  :per_page => 15)
   end
 
   def show
