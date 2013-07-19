@@ -38,6 +38,8 @@ class SensorImport
   def load_imported_sensors
     spreadsheet = open_spreadsheet
     header = spreadsheet.row(1)
+    #convert column headers to lowercase
+    header.each {|x| x.downcase! }
     (2..spreadsheet.last_row).map do |i|
       row = Hash[[header, spreadsheet.row(i)].transpose]
       sensor = Sensor.find_by_id(row["id"]) || Sensor.new
